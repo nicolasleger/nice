@@ -1,0 +1,203 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://opendata.nicecotedazur.org/data/api/3/action/package_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<NICE_CKAN_API_KEY>"
+      X-Ckan-Api-Key:
+      - "<NICE_CKAN_API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 12 Feb 2026 12:33:21 GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, GET, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CKAN-API-KEY, Authorization, Content-Type
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Content-Length:
+      - '16847'
+      Content-Type:
+      - application/json;charset=utf-8
+      Set-Cookie:
+      - cookie_NCA=!Vw0w6rLlnyC+sjFdbFi1cC3j3VTDHgiZEq3pRmZezj9leau4q4eo5UXH40sCiliZd/ryWj3wRByjAA==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"help": "Return a list of the names of the site''s datasets (packages).\n\n    :rtype:
+        list of strings\n\n    ", "success": true, "result": ["extrait-de-la-base-sirene-sur-le-perimetre-de-la-commune-d-aspremont",
+        "extrait-de-la-base-sirene-pour-la-commune-de-tourrette-levens", "adhesions-aux-cal-de-nice-2012-2013",
+        "tarifs-des-services-publics-de-la-ville-de-nice-2020", "nombre-de-divorces-enregistres-par-mois-de-personnes-mariees-a-nice-pour-l-annee-2015",
+        "extrait-de-la-base-sirene-sur-le-perimetre-de-la-commune-de-levens", "nombre-d-habitants-a-tournefort-par-unite-urbaine",
+        "extrait-de-la-base-sirene-pour-la-commune-de-belvedere", "otcn-les-dernieres-news-publiees-par-l-office-du-tourisme",
+        "extrait-de-la-base-sirene-pour-la-commune-de-roubion", "nombre-de-mariages-celebres-par-mois-pour-l-annee-2013",
+        "nombre-d-habitants-a-saint-laurent-du-var-par-unite-urbaine", "fond-de-plan-orthophoto-nca-2015",
+        "extrait-de-la-base-sirene-pour-la-commune-de-saint-dalmas-le-selvage", "limite-des-9-anciens-territoires-de-la-ville-de-nice-jusqu-a-juillet-2020",
+        "limite-des-territoires-de-la-ville-de-nice", "nombre-d-habitants-a-duranus-par-unite-urbaine",
+        "extrait-de-la-base-sirene-pour-la-commune-de-saint-martin-vesubie", "nca-disponibilite-des-velos-bleus-en-temps-reel",
+        "nombre-de-divorces-enregistres-par-mois-de-personnes-mariees-a-nice-pour-l-annee-2016",
+        "activites-proposees-dans-les-salles-polyvalentes-des-ecoles-pendant-les-vacances-scolaires",
+        "liste-des-donnees-essentielles-de-la-commande-publique-pour-la-ville-de-nice-annee-2019",
+        "extrait-de-la-base-sirene-sur-le-perimetre-de-la-commune-de-cagnes-sur-mer",
+        "nombre-de-deces-par-mois-pour-l-annee-2013", "cartographie-du-mode-d-occupation-du-sol-2014-de-la-metropole-nice-cote-d-azur",
+        "donnees-de-trafic-2019-2020-mercantour-digue-veil", "troncons-de-voies-de-la-metropole-nice-cote-d-azur",
+        "contours-geographiques-de-l-operation-d-interet-national-ecovallee", "extrait-de-la-base-sirene-pour-la-commune-de-gattieres",
+        "activites-proposees-dans-les-salles-polyvalentes-des-ecoles-maternelles-et-primaires-en-2016",
+        "top-10-des-prenoms-les-plus-attribues-en-2014", "extrait-de-la-base-sirene-pour-la-commune-de-chateauneuf-villevieille",
+        "base-adresse-locale-sur-le-territoire-de-la-metropole-nca", "nombre-d-habitants-a-chateauneuf-villevieille-par-unite-urbaine",
+        "tarifs-des-services-publics-de-la-ville-de-nice-2013", "top-10-prenoms-2015",
+        "informations-techniques-et-fonctionnelles-sur-les-equipements-sportifs",
+        "extrait-de-la-base-sirene-pour-la-commune-d-ilonse", "extrait-de-la-base-sirene-pour-la-commune-de-la-roquette-sur-var",
+        "nombre-d-attestations-d-accueil-delivrees-par-mois-pour-2016", "plannings-d-activites-des-cal-de-nice-saison-2013-2014",
+        "politique-quantitative-de-developpement-petite-enfance-depuis-2008", "pistes-de-la-station-de-ski-d-isola",
+        "audioguides-nfc-mamac", "extrait-de-la-base-sirene-pour-la-commune-de-rimplas",
+        "top-10-des-prenoms-les-plus-attribues-en-2013", "cartographie-des-maisons-des-associations-de-nice",
+        "nombre-d-habitants-a-nice-par-unite-urbaine", "liste-des-differents-transports-proposes-a-nice",
+        "nombre-de-naissances-par-mois-pour-l-annee-2016", "liste-des-musees-et-galeries-avec-leurs-coordonnees",
+        "cartographie-des-ecoles-et-groupes-scolaires-de-la-ville-de-nice", "orthophotographie-de-nice-cote-d-azur",
+        "nombre-d-habitants-a-saint-jeannet-par-unite-urbaine", "nombre-de-passeports-delivres-par-mois-et-par-mairie-annexe-pour-2014",
+        "nombre-d-habitants-a-levens-par-unite-urbaine", "planning-des-ateliers-tic-dans-les-cyber-espaces-de-la-ville-de-nice",
+        "rla-horaires-de-bus-et-tramway-en-temps-reel-infos-perturbations", "cartographie-des-algues-cystoseira-compressa",
+        "occupation-des-sols-a-grande-echelle-osge-2017-de-la-metropole", "cartographie-des-bornes-de-wifi-public-sur-le-territoire-de-la-ville-de-nice",
+        "pluviometrie-cagnes-sur-mer-pour-mars-2014", "bureaux-de-vote-electoraux-de-la-ville-de-nice",
+        "liste-des-fiches-du-patrimoine-de-la-ville-de-nice", "nombre-d-habitants-a-beaulieu-sur-mer-par-unite-urbaine",
+        "points-d-interet-nfc-topoguide-cimiez", "extrait-de-la-base-sirene-pour-la-commune-de-roquebiliere",
+        "reseau-des-routes-metropolitaines", "points-d-interet-nfc-villages-de-la-tinee",
+        "donnees-de-trafic-2019-2020-magnetometres", "nombre-d-habitants-a-carros-par-unite-urbaine",
+        "nombre-de-mariages-pour-tous-celebres-par-mois-en-2015", "nombre-d-habitants-a-la-bollene-vesubie-par-unite-urbaine",
+        "limite-de-la-metropole-nice-cote-d-azur", "frequentation-du-palais-nikaia-en-nombre-de-visiteurs-depuis-2010",
+        "nombre-d-habitants-a-saint-etienne-de-tinee-par-unite-urbaine", "nombre-d-habitants-a-cagnes-sur-mer-par-unite-urbaine",
+        "limites-des-communes-de-la-metropole-nice-cote-d-azur", "extrait-de-la-base-sirene-pour-la-commune-de-lantosque",
+        "cartographie-des-stations-d-epuration", "liste-des-lieux-de-shopping-de-nice-geolocalises",
+        "cartographie-des-arrets-de-bus-et-de-tramways-du-reseau-lignes-d-azur", "sections-cadastrales-de-la-metropole-nice-cote-d-azur",
+        "nombre-de-passeports-delivres-par-mois-et-par-mairie-annexe-pour-2015", "nombre-d-habitants-a-saint-sauveur-sur-tinee-par-unite-urbaine",
+        "liste-des-donnees-essentielles-de-la-commande-publique-pour-la-metropole-nice-cote-d-azur-annee-2019",
+        "nombre-de-naissances-par-mois-pour-l-annee-2013", "nombre-de-naissances-par-mois-pour-l-annee-2014",
+        "nombre-d-habitants-a-bonson-par-unite-urbaine", "liste-des-lignes-de-bus-et-de-tramways-lignes-d-azur",
+        "nombre-d-habitants-a-castagniers-par-unite-urbaine", "cartographie-des-plages-de-la-metropole",
+        "reglement-des-cimetieres-nicois", "cartographie-des-algues-lithophyllum-bissoides-iii",
+        "liste-des-associations-sportives-qui-proposent-des-activites-sportives-a-nice",
+        "programme-hebdomadaire-des-activites-dans-les-maisons-des-associations-de-nice-saison-2015-2016",
+        "nombre-de-cartes-nationales-d-identite-delivrees-par-mois-et-par-mairie-annexe-pour-2014",
+        "abonnements-centres-animanice-2013-2014", "extrait-de-la-base-sirene-sur-le-perimetre-de-la-commune-de-la-trinite",
+        "extrait-de-la-base-sirene-pour-la-commune-de-colomars", "liste-des-donnees-essentielles-de-la-commande-publique-pour-la-metropole-nice-cote-d-azur-annee-2020",
+        "points-d-interet-nfc-vieux-nice", "nombre-d-habitants-a-saint-jean-cap-ferrat-par-unite-urbaine",
+        "vinci-limitations-de-vitesse", "cartographie-des-mairies-annexes-de-la-ville-de-nice",
+        "nombre-de-mariages-pour-tous-celebres-par-mois-en-2016", "programme-hebdomadaire-des-activites-dans-les-maisons-des-associations-de-nice-pour-2016-2017",
+        "liste-des-centres-animanice-01-01-2015", "liste-des-equipements-lies-a-la-petite-enfance",
+        "nombre-de-passeports-delivres-par-mois-et-par-mairie-annexe-pour-2016", "nombre-d-habitants-a-saint-martin-vesubie-par-unite-urbaine",
+        "activites-et-ouvertures-au-public-des-piscines-municipales", "points-d-interet-nfc-art-dans-la-ville",
+        "nombre-d-habitants-a-aspremont-par-unite-urbaine", "extrait-de-la-base-sirene-pour-la-commune-de-clans",
+        "nombre-de-mariages-celebres-par-mois-en-2016", "nombre-de-deces-par-mois-pour-l-annee-2014",
+        "offre-globale-d-accueil-petite-enfance-sur-la-ville-de-nice", "top-10-prenoms-2016",
+        "nombre-d-habitants-a-roure-par-unite-urbaine", "cartographie-des-aires-de-stationnement-pour-les-personnes-a-mobilite-reduite-nice",
+        "points-d-interet-nfc-route-matisse", "audioguides-nfc-musee-matisse", "tableau-recapitulatif-des-electeurs-inscrits-au-10-janvier-2014",
+        "capacite-d-accueil-par-maison-des-associations-et-par-salle", "nombre-d-habitants-a-clans-par-unite-urbaine",
+        "extrait-de-la-base-sirene-pour-la-commune-de-falicon", "nombre-d-attestations-d-accueil-delivrees-par-mois-pour-2014",
+        "liste-des-donnees-essentielles-de-la-commande-publique-pour-la-metropole-nice-cote-d-azur-annee-2021",
+        "tonnage-mensuel-de-dechets-collectes-sur-le-plan-d-eau-en-saison-estivale-par-an",
+        "nombre-d-habitants-a-valdeblore-par-unite-urbaine", "plan-local-d-urbanisme-metropolitain",
+        "equipements-des-parcs-et-jardins-de-la-ville-de-nice", "nombre-d-habitants-a-saint-andre-de-la-roche-par-unite-urbaine",
+        "nombre-de-tags-et-affiches-nettoyes-par-mois-et-par-an-a-nice-depuis-2011",
+        "nombre-d-habitants-a-la-roquette-sur-var-par-unite-urbaine", "nombre-d-habitants-a-rimplas-par-unite-urbaine",
+        "modele-numerique-de-terrain-de-nice-cote-d-azur", "nombre-d-attestations-d-accueil-delivrees-par-mois-pour-2015",
+        "coordonnees-des-cyber-espaces-de-la-ville-de-nice", "personnes-celebres-enterrees-au-cimetiere-du-chateau",
+        "nombre-de-cartes-nationales-d-identite-delivrees-par-mois-et-par-mairie-annexe-pour-2016",
+        "vdn-agenda-de-la-ville-de-nice-en-temps-reel", "cartographie-des-stationnements-deux-roues-de-nice",
+        "extrait-de-la-base-sirene-pour-la-commune-de-saint-jean-cap-ferrat", "nombre-d-habitants-a-bairols-par-unite-urbaine",
+        "export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur", "nombre-d-habitants-a-saint-martin-du-var-par-unite-urbaine",
+        "cartographie-des-offices-de-tourisme-de-la-metropole", "cartographie-des-musees-et-galeries-de-la-ville-de-nice",
+        "nombre-d-habitants-a-drap-par-unite-urbaine", "liste-des-evenements-de-circulation-2019-et-2020",
+        "frcc-villefranche-liste-des-points-d-interet-de-villefranche-sur-mer", "extrait-de-la-base-sirene-pour-la-commune-de-la-gaude",
+        "voies-principales-de-la-metropole-nice-cote-d-azur", "cadastre-de-la-metropole-nice-cote-d-azur-par-commune",
+        "contrat-de-ville-de-la-commune-de-nice-2015-2020", "nombre-d-habitants-a-colomars-par-unite-urbaine",
+        "liste-des-visites-touristiques-culturelles-et-sportives-proposees-par-l-otmnca",
+        "cartographie-des-etablissements-recevant-du-public", "cartographie-des-parcs-et-jardins-de-la-ville-de-nice",
+        "nombre-d-habitants-a-saint-blaise-par-unite-urbaine", "superficie-des-cimetieres-nicois-et-du-crematorium",
+        "nombre-de-naissances-par-mois-pour-l-annee-2015", "extrait-de-la-base-sirene-pour-la-commune-de-roure",
+        "extrait-de-la-base-sirene-sur-le-perimetre-de-la-commune-de-carros", "cartographie-des-algues-ulvales",
+        "extrait-de-la-base-sirene-pour-la-commune-de-saint-blaise", "liste-des-films-amateurs-detenus-par-la-cinematheque",
+        "batiments-cadastraux-de-la-metropole-nice-cote-d-azur", "nombre-d-habitants-a-lantosque-par-unite-urbaine",
+        "plannings-d-activites-des-centres-animanice-saison-2014-2015", "frequentation-du-nice-jazz-festival-en-nombre-de-visiteurs-depuis-2011",
+        "cartographie-des-algues-lithophyllum-bissoides-ii", "nombre-de-cartes-nationales-d-identite-delivrees-par-mois-et-par-mairie-annexe-pour-2015",
+        "cartographie-des-equipements-sportifs-de-la-ville-de-nice", "cartographie-des-etablissements-lies-a-la-petite-enfance",
+        "extrait-de-la-base-sirene-pour-la-commune-de-la-bollene-vesubie", "disponibilite-des-velos-velobleu-en-temps-reel",
+        "extrait-de-la-base-sirene-pour-la-commune-de-drap", "nca-agenda-des-actualites-de-la-metropole-nice-cote-d-azur-en-temps-reel",
+        "nombre-d-habitants-a-gilette-par-unite-urbaine", "cartographie-des-stations-de-ski-de-la-metropole",
+        "nombre-de-deces-par-mois-pour-l-annee-2016", "nombre-de-mariages-pour-tous-celebres-par-mois-pour-l-annee-2013",
+        "nombre-d-habitants-a-la-gaude-par-unite-urbaine", "extrait-de-la-base-sirene-pour-la-commune-de-saint-sauveur-sur-tinee",
+        "nombre-de-mariages-celebres-par-mois-en-2015", "amenagements-cyclables-de-la",
+        "extrait-de-la-base-sirene-pour-la-commune-de-saint-andre-de-la-roche", "extrait-de-la-base-sirene-pour-la-commune-d-utelle",
+        "extrait-de-la-base-sirene-pour-la-commune-d-isola", "extrait-de-la-base-sirene-pour-la-commune-de-bairols",
+        "nombre-de-divorces-par-mois-en-2014-de-personnes-mariees-a-nice", "nombre-de-divorces-par-mois-en-2013-de-personnes-mariees-a-nice",
+        "cartographie-des-stations-velobleu", "nombre-d-habitants-a-utelle-par-unite-urbaine",
+        "cartographie-des-points-d-apport-volontaire-tri-des-dechets-points-de-recyclage",
+        "liste-des-restaurants-de-nice-geolocalises", "cartographie-des-arbres-communaux",
+        "nombre-de-deces-par-mois-pour-l-annee-2015", "musees-et-galeries-de-la-ville-de-nice",
+        "liste-et-adresses-des-etablissements-scolaires", "fond-de-plan-cartographique-nca",
+        "cartographie-des-points-de-mesures-relatifs-a-l-assainissement", "liste-des-hebergements-de-nice-geolocalises",
+        "liste-des-equipements-lies-a-la-sante-sur-le-territoire-metropolitain", "extrait-de-la-base-sirene-pour-la-commune-de-duranus",
+        "cartographie-des-algues-corallina-elongata", "cartographie-des-equipements-de-la-metropole",
+        "extrait-de-la-base-sirene-sur-le-perimetre-de-la-commune-de-nice", "extrait-de-la-base-sirene-sur-le-perimetre-de-la-commune-de-saint-laurent-du-var",
+        "extrait-de-la-base-sirene-pour-la-commune-de-le-broc", "cartographie-des-algues-rissoella-verruculosa",
+        "nombre-d-habitants-a-roquebiliere-par-unite-urbaine", "cartographie-des-lignes-de-bus-et-de-tramways-aux-arrets-sur-le-reseau-lignes-d-azur",
+        "donnees-de-trafic-2019-2020-promenade-des-anglais", "cartograhie-des-stations-autobleue-de-nice-cote-d-azur",
+        "nombre-d-habitants-a-venanson-par-unite-urbaine", "extrait-de-la-base-sirene-sur-le-perimetre-de-la-commune-de-vence",
+        "frcc-villefranche-liste-des-commercants-hebergements-restaurants-etc-de-villefranche-sur-mer",
+        "extrait-de-la-base-sirene-pour-la-commune-de-saint-etienne-de-tinee", "cartographie-des-algues-lithophyllum-bissoides-i",
+        "liste-des-boutiques-de-nice-geolocalisees", "liste-des-sorties-proposees-a-nice",
+        "liste-descriptive-des-ports-d-azur", "extrait-de-la-base-sirene-pour-la-commune-de-marie",
+        "nombre-d-habitants-a-vence-par-unite-urbaine", "nombre-d-habitants-a-roubion-par-unite-urbaine",
+        "extrait-de-la-base-sirene-pour-la-commune-de-venanson", "liste-des-donnees-essentielles-de-la-commande-publique-pour-la-ville-de-nice-annee-2020",
+        "nombre-de-mariages-pour-tous-celebres-par-mois-en-2014", "webservices-autobleue-en-temps-reel",
+        "extrait-de-la-base-sirene-pour-la-commune-de-saint-martin-du-var", "cartographie-des-ports-du-territoire-de-la-metropole",
+        "liste-et-adresses-des-bureaux-de-vote-de-nice-par-canton-pour-2017", "tarifs-des-services-publics-de-la-ville-de-nice-2021",
+        "nombre-d-habitants-a-marie-par-unite-urbaine", "extrait-de-la-base-sirene-pour-la-commune-de-tournefort",
+        "parcours-decouvertes-nfc-cimetiere-du-chateau", "nombre-d-habitants-a-tourrette-levens-par-unite-urbaine",
+        "pistes-de-la-station-de-ski-d-auron", "liste-des-donnees-essentielles-de-la-commande-publique-pour-la-ville-de-nice-annee-2021",
+        "reglement-du-crematorium-de-nice-cote-d-azur", "extrait-de-la-base-sirene-pour-la-commune-de-beaulieu-sur-mer",
+        "nombre-d-habitants-a-isola-par-unite-urbaine", "nombre-d-habitants-a-falicon-par-unite-urbaine",
+        "donnees-de-trafic-2019-2020-voie-mathis-donnees-complementaires", "nombre-d-habitants-a-saint-dalmas-le-selvage-par-unite-urbaine",
+        "extrait-de-la-base-sirene-pour-la-commune-de-gilette", "liste-des-adresses-utiles-de-nice-geolocalisees",
+        "nombre-d-habitants-a-ilonse-par-unite-urbaine", "fiches-botaniques-nfc-promenade-du-paillon",
+        "abonnements-animanice-2015-2016", "points-routiers-des-routes-metropolitaines",
+        "extrait-de-la-base-sirene-sur-le-perimetre-de-la-commune-de-villefranche-sur-mer",
+        "liste-des-noms-generiques-des-points-d-arrets-de-bus-et-de-tramways-lignes-d-azur",
+        "cartographie-des-biocenoses-marines", "points-d-interet-nfc-villages-perches",
+        "nombre-d-habitants-a-villefranche-sur-mer-par-unite-urbaine", "extrait-de-la-base-sirene-pour-la-commune-de-valdeblore",
+        "nombre-de-mariages-celebres-par-mois-en-2014", "donnees-de-trafic-2019-2020-voie-mathis",
+        "informations-generales-sur-les-cimetieres", "init_for_tags", "programme-hebdomadaire-des-activites-proposees-dans-les-maisons-des-associations-2014",
+        "cartographie-des-sentiers-vtt-des-communes-de-la-metropole", "nombre-d-habitants-a-le-broc-par-unite-urbaine",
+        "nombre-d-habitants-a-belvedere-par-unite-urbaine", "nombre-d-habitants-a-gattieres-par-unite-urbaine",
+        "rla-recherche-d-itineraire-en-transports-en-commun-sur-le-reseau-lignes-d-azur",
+        "bathymetrie", "liste-des-hotels-de-nice-geolocalises", "planning-des-activites-sportives-proposees-dans-les-etablissements-de-la-ville-de-nice",
+        "extrait-de-la-base-sirene-pour-la-commune-de-saint-jeannet", "equipements-sportifs-adresse-et-coordonnees",
+        "parcelles-cadastrales-de-la-metropole-nice-cote-d-azur", "tonnage-mensuel-de-dechets-collectes-sur-les-plages-en-saison-hivernale-par-an",
+        "donnees-de-comptages-routiers-decembre-2021-janvier-2022", "extrait-de-la-base-sirene-pour-la-commune-de-castagniers",
+        "nombre-d-habitants-a-la-trinite-par-unite-urbaine", "cartographie-des-parkings-de-la-metropole",
+        "liste-des-centres-d-animation-et-de-loisirs-de-nice", "inhumations-et-cremation-a-nice",
+        "extrait-de-la-base-sirene-pour-la-commune-de-bonson", "cartographie-des-algues-cystoseira-amentacea",
+        "liste-des-evenements-publics-recenses-par-l-office-du-tourisme-metropolitain-nice-cote-d-azur"]}'
+  recorded_at: Thu, 12 Feb 2026 12:33:38 GMT
+recorded_with: VCR 6.4.0
