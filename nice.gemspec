@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "nice"
   spec.version       = Nice::VERSION
   spec.authors       = ["Nicolas Leger"]
-  spec.email         = ["your.email@example.com"]
+  spec.email         = ["nicolasleger@users.noreply.github.com"]
 
   spec.summary       = "OpenData NCA - Métropole Nice Côte d'Azur"
   spec.description   = "A Ruby gem for accessing and managing OpenData from Nice Côte d'Azur metropolitan area via CKAN API"
