@@ -1,6 +1,8 @@
+require_relative "lib/nice/version"
+
 Gem::Specification.new do |spec|
   spec.name          = "nice"
-  spec.version       = "0.1.0"
+  spec.version       = Nice::VERSION
   spec.authors       = ["Nicolas Leger"]
   spec.email         = ["your.email@example.com"]
 
