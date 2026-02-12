@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-slim
-    environment: test
+    environment: ${{ github.ref == 'refs/heads/main' && 'test-on-main' || 'test' }}
     strategy:
       matrix:
         ruby-version: ['3.2', '3.3', '3.4', '4.0']
