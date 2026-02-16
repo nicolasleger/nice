@@ -2,7 +2,8 @@
   "packages": {
     ".": {
       "package-name": "nice",
-      "version-file": "lib/nice/version.rb"
+      "version-file": "lib/nice/version.rb",
+      "extra-files": ["Gemfile.lock"]
     }
   }
 }
