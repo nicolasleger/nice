@@ -1,0 +1,637 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/datasets?page=1&page_size=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 308
+      message: PERMANENT REDIRECT
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 16 Feb 2026 05:36:36 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '373'
+      Location:
+      - https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/datasets/?page=1&page_size=5
+      Vary:
+      - Origin, Cookie
+      Pragma:
+      - public
+      Cache-Control:
+      - public
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: |
+        <!doctype html>
+        <html lang=en>
+        <title>Redirecting...</title>
+        <h1>Redirecting...</h1>
+        <p>You should be redirected automatically to the target URL: <a href="https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/datasets/?page=1&amp;page_size=5">https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/datasets/?page=1&amp;page_size=5</a>. If not, click the link.
+  recorded_at: Mon, 16 Feb 2026 05:36:36 GMT
+- request:
+    method: get
+    uri: https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/datasets/?page=1&page_size=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 16 Feb 2026 05:36:36 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin, Cookie
+      Pragma:
+      - public
+      Cache-Control:
+      - public
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data": [{"access_audiences": [], "access_type": "open", "access_type_reason":
+        null, "access_type_reason_category": null, "acronym": null, "archived": null,
+        "authorization_request_url": null, "badges": [], "contact_points": [], "created_at":
+        "2014-06-05T00:00:00+00:00", "deleted": null, "description": "Ce jeu de donn\u00e9es
+        renseigne sur le nombre de mariages c\u00e9l\u00e9br\u00e9s \u00e0 par mois
+        \u00e0 Nice.", "description_short": null, "extras": {}, "featured": false,
+        "frequency": "unknown", "frequency_date": null, "harvest": {"backend": "CKAN",
+        "created_at": "2014-06-05T00:00:00+00:00", "domain": "opendata.nicecotedazur.org",
+        "last_update": "2026-02-16T03:00:27.361000+00:00", "remote_id": "0624d171-1e79-4735-9541-955e8075ab54",
+        "remote_url": "http://opendata.nicecotedazur.org/data/dataset/nombre-de-mariages-celebres-par-mois-pour-l-annee-2013",
+        "source_id": "59aea691c751df40c6e8212c"}, "id": "59aea784a3a72917d9f3fc72",
+        "internal": {"created_at_internal": "2014-06-05T00:00:00+00:00", "last_modified_internal":
+        "2019-05-17T00:00:00+00:00"}, "last_modified": "2019-05-17T00:00:00+00:00",
+        "last_update": "2014-11-06T00:00:00+00:00", "license": "lov2", "metrics":
+        {"dataservices": 1, "discussions": 0, "discussions_open": 0, "followers":
+        0, "followers_by_months": {"2024-08": 0, "2024-09": 0, "2024-10": 0, "2024-11":
+        0, "2024-12": 0, "2025-01": 0, "2025-02": 0, "2025-03": 0, "2025-04": 0, "2025-05":
+        0, "2025-06": 0, "2025-07": 0, "2025-08": 0}, "resources_downloads": 1032,
+        "reuses": 0, "reuses_by_months": {"2024-08": 0, "2024-09": 0, "2024-10": 0,
+        "2024-11": 0, "2024-12": 0, "2025-01": 0, "2025-02": 0, "2025-03": 0, "2025-04":
+        0, "2025-05": 0, "2025-06": 0, "2025-07": 0, "2025-08": 0}, "views": 2603},
+        "organization": {"acronym": "MNCA", "badges": [{"kind": "local-authority"},
+        {"kind": "certified"}], "class": "Organization", "id": "59aea226c751df38f3f6834b",
+        "logo": "https://static.data.gouv.fr/avatars/08/d2b35780ce41768addccd1f563be92-original.png",
+        "logo_thumbnail": "https://static.data.gouv.fr/avatars/08/d2b35780ce41768addccd1f563be92-100.png",
+        "name": "M\u00e9tropole Nice C\u00f4te d''Azur", "page": "https://www.data.gouv.fr/organizations/nice-cote-dazur",
+        "permissions": {"delete": false, "edit": false, "harvest": false, "members":
+        false, "private": false}, "slug": "nice-cote-dazur", "uri": "https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/"},
+        "owner": null, "page": "https://www.data.gouv.fr/datasets/nombre-de-mariages-celebres-par-mois-pour-l-annee-2013",
+        "permissions": {"delete": false, "edit": false, "edit_resources": false},
+        "private": false, "quality": {"all_resources_available": true, "dataset_description_quality":
+        false, "has_open_format": true, "has_resources": true, "license": true, "resources_documentation":
+        false, "score": 0.3333333333333333, "spatial": false, "temporal_coverage":
+        false, "update_frequency": false}, "resources": [{"checksum": null, "created_at":
+        "2014-06-05T00:00:00+00:00", "description": "", "extras": {"analysis:checksum":
+        "fb036523a188a48a47af042412821be4f8fa8513", "analysis:content-length": 26624,
+        "analysis:last-modified-at": "2014-11-06T00:00:00+00:00", "analysis:last-modified-detection":
+        "harvest-resource-metadata", "analysis:mime-type": "application/vnd.ms-excel",
+        "analysis:parsing:finished_at": "2025-04-09T21:46:26.333921+00:00", "analysis:parsing:parsing_table":
+        "389091438e34d9663daedb73a8532da1", "analysis:parsing:started_at": "2025-04-09T21:46:25.985936+00:00",
+        "check:available": true, "check:cors:allow-headers": "X-CKAN-API-KEY, Authorization,
+        Content-Type", "check:cors:allow-methods": "POST, PUT, GET, DELETE, OPTIONS",
+        "check:cors:allow-origin": "*", "check:cors:status": 200, "check:count-availability":
+        160, "check:date": "2026-02-12T09:57:41.004888+00:00", "check:headers:content-length":
+        26624, "check:headers:content-type": "application/vnd.ms-excel", "check:id":
+        41380799, "check:status": 200, "check:timeout": false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2014-11-06T12%3A08%3A11.276Z/2013-nombre-de-mariages-celebres.xls"},
+        "filesize": null, "filetype": "remote", "format": "xls", "harvest": {"issued_at":
+        "2014-06-05T00:00:00+00:00", "modified_at": "2014-11-06T00:00:00+00:00"},
+        "id": "c5493d38-7b8c-4b23-9547-0d29df07ae7e", "internal": {"created_at_internal":
+        "2017-09-05T15:32:52.394000+00:00", "last_modified_internal": "2014-11-06T00:00:00+00:00"},
+        "last_modified": "2014-11-06T00:00:00+00:00", "latest": "https://www.data.gouv.fr/api/1/datasets/r/c5493d38-7b8c-4b23-9547-0d29df07ae7e",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        451}, "mime": "application/vnd.ms-excel", "preview_url": "https://explore.data.gouv.fr/fr/resources/c5493d38-7b8c-4b23-9547-0d29df07ae7e",
+        "schema": null, "title": "2013 Nombre de mariages celebres.xls", "type": "main",
+        "url": "http://opendata.nicecotedazur.org/data/storage/f/2014-11-06T12%3A08%3A11.276Z/2013-nombre-de-mariages-celebres.xls"},
+        {"checksum": null, "created_at": "2014-06-05T00:00:00+00:00", "description":
+        "", "extras": {"analysis:checksum": "62d795b4cd02cec5844503c4cd9dfa72b4faa4a4",
+        "analysis:content-length": 3621, "analysis:last-modified-at": "2014-06-23T00:00:00+00:00",
+        "analysis:last-modified-detection": "harvest-resource-metadata", "analysis:mime-type":
+        "application/vnd.oasis.opendocument.spreadsheet", "check:available": true,
+        "check:cors:allow-headers": "X-CKAN-API-KEY, Authorization, Content-Type",
+        "check:cors:allow-methods": "POST, PUT, GET, DELETE, OPTIONS", "check:cors:allow-origin":
+        "*", "check:cors:status": 200, "check:count-availability": 73, "check:date":
+        "2026-02-11T21:51:03.979725+00:00", "check:headers:charset": "iso-8859-1",
+        "check:headers:content-length": 3621, "check:headers:content-type": "application/vnd.oasis.opendocument.spreadsheet",
+        "check:id": 41338679, "check:status": 200, "check:timeout": false, "check:url":
+        "http://opendata.nicecotedazur.org/data/storage/f/2014-06-05T09%3A55%3A58.449Z/2013-nombre-mariages-celebres-par-mois.ods"},
+        "filesize": null, "filetype": "remote", "format": "ods", "harvest": {"issued_at":
+        "2014-06-05T00:00:00+00:00", "modified_at": "2014-06-23T00:00:00+00:00"},
+        "id": "9bd2cde2-38b1-4031-8d30-6aaca7bd896a", "internal": {"created_at_internal":
+        "2017-09-05T15:32:52.394000+00:00", "last_modified_internal": "2014-06-23T00:00:00+00:00"},
+        "last_modified": "2014-06-23T00:00:00+00:00", "latest": "https://www.data.gouv.fr/api/1/datasets/r/9bd2cde2-38b1-4031-8d30-6aaca7bd896a",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        249}, "mime": "application/vnd.oasis.opendocument.spreadsheet", "preview_url":
+        null, "schema": null, "title": "2013-nombre-mariages-celebres-par-mois.ods",
+        "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2014-06-05T09%3A55%3A58.449Z/2013-nombre-mariages-celebres-par-mois.ods"},
+        {"checksum": null, "created_at": "2014-06-05T00:00:00+00:00", "description":
+        "", "extras": {"analysis:checksum": "3661792accbc80f128e491bb57b35e1d1b5a405e",
+        "analysis:content-length": 158, "analysis:last-modified-at": "2014-06-23T00:00:00+00:00",
+        "analysis:last-modified-detection": "harvest-resource-metadata", "analysis:mime-type":
+        "text/csv", "analysis:parsing:finished_at": "2025-04-09T18:48:50.460593+00:00",
+        "analysis:parsing:parsing_table": "3e9876fe544f8d2f701314a1606efa28", "analysis:parsing:started_at":
+        "2025-04-09T18:48:49.844503+00:00", "check:available": true, "check:cors:allow-headers":
+        "X-CKAN-API-KEY, Authorization, Content-Type", "check:cors:allow-methods":
+        "POST, PUT, GET, DELETE, OPTIONS", "check:cors:allow-origin": "*", "check:cors:status":
+        200, "check:count-availability": 32, "check:date": "2026-02-12T07:36:11.198303+00:00",
+        "check:headers:charset": "iso-8859-1", "check:headers:content-length": 158,
+        "check:headers:content-type": "text/csv", "check:id": 41376305, "check:status":
+        200, "check:timeout": false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2014-06-05T09%3A56%3A08.253Z/2013-nombre-mariages-celebres-par-mois.csv"},
+        "filesize": null, "filetype": "remote", "format": "csv", "harvest": {"issued_at":
+        "2014-06-05T00:00:00+00:00", "modified_at": "2014-06-23T00:00:00+00:00"},
+        "id": "a8eeb13b-653e-4568-b6fd-e2e43cdcbfb6", "internal": {"created_at_internal":
+        "2017-09-05T15:32:52.395000+00:00", "last_modified_internal": "2014-06-23T00:00:00+00:00"},
+        "last_modified": "2014-06-23T00:00:00+00:00", "latest": "https://www.data.gouv.fr/api/1/datasets/r/a8eeb13b-653e-4568-b6fd-e2e43cdcbfb6",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        544}, "mime": "text/csv", "preview_url": "https://explore.data.gouv.fr/fr/resources/a8eeb13b-653e-4568-b6fd-e2e43cdcbfb6",
+        "schema": null, "title": "2013-nombre-mariages-celebres-par-mois.csv", "type":
+        "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2014-06-05T09%3A56%3A08.253Z/2013-nombre-mariages-celebres-par-mois.csv"}],
+        "schema": null, "slug": "nombre-de-mariages-celebres-par-mois-pour-l-annee-2013",
+        "spatial": null, "tags": ["celebration", "heterosexuel", "mariage", "mixte",
+        "nombre", "union"], "temporal_coverage": null, "title": "Nombre de mariages
+        c\u00e9l\u00e9br\u00e9s par mois pour l''ann\u00e9e 2013", "uri": "https://www.data.gouv.fr/api/1/datasets/nombre-de-mariages-celebres-par-mois-pour-l-annee-2013/"},
+        {"access_audiences": [], "access_type": "open", "access_type_reason": null,
+        "access_type_reason_category": null, "acronym": null, "archived": null, "authorization_request_url":
+        null, "badges": [], "contact_points": [], "created_at": "2015-03-04T00:00:00+00:00",
+        "deleted": null, "description": "Ce jeu de donn\u00e9es renseigne le nombre
+        mensuel de divorces enregistr\u00e9s en 2015 pour les mariages c\u00e9l\u00e9br\u00e9s
+        \u00e0 Nice.", "description_short": null, "extras": {}, "featured": false,
+        "frequency": "unknown", "frequency_date": null, "harvest": {"backend": "CKAN",
+        "created_at": "2015-03-04T00:00:00+00:00", "domain": "opendata.nicecotedazur.org",
+        "last_update": "2026-02-16T03:00:24.638000+00:00", "remote_id": "02c44150-23ac-4a51-874d-2bf762de4748",
+        "remote_url": "http://opendata.nicecotedazur.org/data/dataset/nombre-de-divorces-enregistres-par-mois-de-personnes-mariees-a-nice-pour-l-annee-2015",
+        "source_id": "59aea691c751df40c6e8212c"}, "id": "59aea784a3a72917daf3fc5a",
+        "internal": {"created_at_internal": "2015-03-04T00:00:00+00:00", "last_modified_internal":
+        "2019-05-17T00:00:00+00:00"}, "last_modified": "2019-05-17T00:00:00+00:00",
+        "last_update": "2016-01-08T00:00:00+00:00", "license": "lov2", "metrics":
+        {"dataservices": 0, "discussions": 0, "discussions_open": 0, "followers":
+        0, "followers_by_months": {"2024-08": 0, "2024-09": 0, "2024-10": 0, "2024-11":
+        0, "2024-12": 0, "2025-01": 0, "2025-02": 0, "2025-03": 0, "2025-04": 0, "2025-05":
+        0, "2025-06": 0, "2025-07": 0, "2025-08": 0}, "resources_downloads": 550,
+        "reuses": 0, "reuses_by_months": {"2024-08": 0, "2024-09": 0, "2024-10": 0,
+        "2024-11": 0, "2024-12": 0, "2025-01": 0, "2025-02": 0, "2025-03": 0, "2025-04":
+        0, "2025-05": 0, "2025-06": 0, "2025-07": 0, "2025-08": 0}, "views": 1760},
+        "organization": {"acronym": "MNCA", "badges": [{"kind": "local-authority"},
+        {"kind": "certified"}], "class": "Organization", "id": "59aea226c751df38f3f6834b",
+        "logo": "https://static.data.gouv.fr/avatars/08/d2b35780ce41768addccd1f563be92-original.png",
+        "logo_thumbnail": "https://static.data.gouv.fr/avatars/08/d2b35780ce41768addccd1f563be92-100.png",
+        "name": "M\u00e9tropole Nice C\u00f4te d''Azur", "page": "https://www.data.gouv.fr/organizations/nice-cote-dazur",
+        "permissions": {"delete": false, "edit": false, "harvest": false, "members":
+        false, "private": false}, "slug": "nice-cote-dazur", "uri": "https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/"},
+        "owner": null, "page": "https://www.data.gouv.fr/datasets/nombre-de-divorces-enregistres-par-mois-de-personnes-mariees-a-nice-pour-l-annee-2015",
+        "permissions": {"delete": false, "edit": false, "edit_resources": false},
+        "private": false, "quality": {"all_resources_available": true, "dataset_description_quality":
+        false, "has_open_format": true, "has_resources": true, "license": true, "resources_documentation":
+        false, "score": 0.3333333333333333, "spatial": false, "temporal_coverage":
+        false, "update_frequency": false}, "resources": [{"checksum": null, "created_at":
+        "2015-03-04T00:00:00+00:00", "description": "", "extras": {"analysis:checksum":
+        "aae6933901828adfcdb09ad5bd0ce351c49dd2c3", "analysis:content-length": 27648,
+        "analysis:error": "File too large to download", "analysis:last-modified-at":
+        "2016-01-08T00:00:00+00:00", "analysis:last-modified-detection": "harvest-resource-metadata",
+        "analysis:mime-type": "application/vnd.ms-excel", "analysis:parsing:finished_at":
+        "2025-04-09T05:12:45.868805+00:00", "analysis:parsing:parsing_table": "c5520b405de90fa7dbbe7e6ad7e33a70",
+        "analysis:parsing:started_at": "2025-04-09T05:12:45.387178+00:00", "check:available":
+        true, "check:cors:allow-headers": "X-CKAN-API-KEY, Authorization, Content-Type",
+        "check:cors:allow-methods": "POST, PUT, GET, DELETE, OPTIONS", "check:cors:allow-origin":
+        "*", "check:cors:status": 200, "check:count-availability": 121, "check:date":
+        "2026-02-11T17:24:59.078306+00:00", "check:headers:content-length": 27648,
+        "check:headers:content-type": "application/vnd.ms-excel", "check:id": 41327367,
+        "check:status": 200, "check:timeout": false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2016-01-08T08%3A04%3A02.863Z/2015-nombre-de-divorces-de-personnes-mariees-a-nice.xls"},
+        "filesize": null, "filetype": "remote", "format": "xls", "harvest": {"issued_at":
+        "2015-03-04T00:00:00+00:00", "modified_at": "2016-01-08T00:00:00+00:00"},
+        "id": "c5dbd22f-71b2-4012-a63d-e75ca1e49509", "internal": {"created_at_internal":
+        "2017-09-05T15:32:52.324000+00:00", "last_modified_internal": "2016-01-08T00:00:00+00:00"},
+        "last_modified": "2016-01-08T00:00:00+00:00", "latest": "https://www.data.gouv.fr/api/1/datasets/r/c5dbd22f-71b2-4012-a63d-e75ca1e49509",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        284}, "mime": "application/vnd.ms-excel", "preview_url": "https://explore.data.gouv.fr/fr/resources/c5dbd22f-71b2-4012-a63d-e75ca1e49509",
+        "schema": null, "title": "2015 Nombre de divorces de personnes mari\u00e9es
+        \u00e0 Nice.xls", "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2016-01-08T08%3A04%3A02.863Z/2015-nombre-de-divorces-de-personnes-mariees-a-nice.xls"},
+        {"checksum": null, "created_at": "2015-03-04T00:00:00+00:00", "description":
+        "", "extras": {"analysis:checksum": "51b5816300366755a2e2806e90a86ce91683640b",
+        "analysis:content-length": 3815, "analysis:error": "File too large to download",
+        "analysis:last-modified-at": "2016-01-08T00:00:00+00:00", "analysis:last-modified-detection":
+        "harvest-resource-metadata", "analysis:mime-type": "application/vnd.oasis.opendocument.spreadsheet",
+        "check:available": true, "check:cors:allow-headers": "X-CKAN-API-KEY, Authorization,
+        Content-Type", "check:cors:allow-methods": "POST, PUT, GET, DELETE, OPTIONS",
+        "check:cors:allow-origin": "*", "check:cors:status": 200, "check:count-availability":
+        36, "check:date": "2026-02-11T17:13:45.609305+00:00", "check:headers:content-length":
+        3815, "check:headers:content-type": "application/vnd.oasis.opendocument.spreadsheet",
+        "check:id": 41326385, "check:status": 200, "check:timeout": false, "check:url":
+        "http://opendata.nicecotedazur.org/data/storage/f/2016-01-08T08%3A04%3A24.619Z/2015-nombre-de-divorces-de-personnes-mariees-a-nice.ods"},
+        "filesize": null, "filetype": "remote", "format": "ods", "harvest": {"issued_at":
+        "2015-03-04T00:00:00+00:00", "modified_at": "2016-01-08T00:00:00+00:00"},
+        "id": "9bbe6b61-1a86-456c-8d80-40c30c7b01ec", "internal": {"created_at_internal":
+        "2017-09-05T15:32:52.324000+00:00", "last_modified_internal": "2016-01-08T00:00:00+00:00"},
+        "last_modified": "2016-01-08T00:00:00+00:00", "latest": "https://www.data.gouv.fr/api/1/datasets/r/9bbe6b61-1a86-456c-8d80-40c30c7b01ec",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        113}, "mime": "application/vnd.oasis.opendocument.spreadsheet", "preview_url":
+        null, "schema": null, "title": "2015 Nombre de divorces de personnes mari\u00e9es
+        \u00e0 Nice.ods", "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2016-01-08T08%3A04%3A24.619Z/2015-nombre-de-divorces-de-personnes-mariees-a-nice.ods"},
+        {"checksum": null, "created_at": "2015-03-04T00:00:00+00:00", "description":
+        "", "extras": {"analysis:checksum": "8ee5c88da395234bdeedcddf47bf2bb9a9963436",
+        "analysis:content-length": 192, "analysis:last-modified-at": "2016-01-08T00:00:00+00:00",
+        "analysis:last-modified-detection": "harvest-resource-metadata", "analysis:mime-type":
+        "text/plain", "analysis:parsing:finished_at": "2025-04-09T18:28:11.801861+00:00",
+        "analysis:parsing:parsing_table": "d53ccd8db4a0c06e6ede28ce7a9f93b2", "analysis:parsing:started_at":
+        "2025-04-09T18:28:11.443335+00:00", "check:available": true, "check:cors:allow-headers":
+        "X-CKAN-API-KEY, Authorization, Content-Type", "check:cors:allow-methods":
+        "POST, PUT, GET, DELETE, OPTIONS", "check:cors:allow-origin": "*", "check:cors:status":
+        200, "check:count-availability": 102, "check:date": "2026-02-12T07:15:08.615915+00:00",
+        "check:headers:content-length": 192, "check:headers:content-type": "text/csv",
+        "check:id": 41373695, "check:status": 200, "check:timeout": false, "check:url":
+        "http://opendata.nicecotedazur.org/data/storage/f/2016-01-08T08%3A04%3A38.631Z/2015-nombre-de-divorces-de-personnes-mariees-a-nice.csv"},
+        "filesize": null, "filetype": "remote", "format": "csv", "harvest": {"issued_at":
+        "2015-03-04T00:00:00+00:00", "modified_at": "2016-01-08T00:00:00+00:00"},
+        "id": "c8978267-b5a3-4a63-ab7e-45ee16c1e180", "internal": {"created_at_internal":
+        "2017-09-05T15:32:52.325000+00:00", "last_modified_internal": "2016-01-08T00:00:00+00:00"},
+        "last_modified": "2016-01-08T00:00:00+00:00", "latest": "https://www.data.gouv.fr/api/1/datasets/r/c8978267-b5a3-4a63-ab7e-45ee16c1e180",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        384}, "mime": "text/csv", "preview_url": "https://explore.data.gouv.fr/fr/resources/c8978267-b5a3-4a63-ab7e-45ee16c1e180",
+        "schema": null, "title": "2015 Nombre de divorces de personnes mari\u00e9es
+        \u00e0 Nice.csv", "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2016-01-08T08%3A04%3A38.631Z/2015-nombre-de-divorces-de-personnes-mariees-a-nice.csv"}],
+        "schema": null, "slug": "nombre-de-divorces-enregistres-par-mois-de-personnes-mariees-a-nice-pour-l-annee-2015",
+        "spatial": null, "tags": [], "temporal_coverage": null, "title": "Nombre de
+        divorces enregistr\u00e9s par mois de personnes mari\u00e9es \u00e0 Nice pour
+        l''ann\u00e9e 2015 ", "uri": "https://www.data.gouv.fr/api/1/datasets/nombre-de-divorces-enregistres-par-mois-de-personnes-mariees-a-nice-pour-l-annee-2015/"},
+        {"access_audiences": [], "access_type": "open", "access_type_reason": null,
+        "access_type_reason_category": null, "acronym": null, "archived": null, "authorization_request_url":
+        null, "badges": [], "contact_points": [], "created_at": "2017-01-19T00:00:00+00:00",
+        "deleted": null, "description": "Ce jeu de donn\u00e9es renseigne le nombre
+        mensuel de divorces enregistr\u00e9s pour les mariages c\u00e9l\u00e9br\u00e9s
+        \u00e0 Nice.", "description_short": null, "extras": {}, "featured": false,
+        "frequency": "unknown", "frequency_date": null, "harvest": {"backend": "CKAN",
+        "created_at": "2017-01-19T00:00:00+00:00", "domain": "opendata.nicecotedazur.org",
+        "last_update": "2026-02-16T03:00:32.120000+00:00", "remote_id": "0d6b3e49-9a50-4dba-8913-0fdf341ce44f",
+        "remote_url": "http://opendata.nicecotedazur.org/data/dataset/nombre-de-divorces-enregistres-par-mois-de-personnes-mariees-a-nice-pour-l-annee-2016",
+        "source_id": "59aea691c751df40c6e8212c"}, "id": "59aea784a3a72917daf3fc5b",
+        "internal": {"created_at_internal": "2017-01-19T00:00:00+00:00", "last_modified_internal":
+        "2019-05-17T00:00:00+00:00"}, "last_modified": "2019-05-17T00:00:00+00:00",
+        "last_update": "2017-01-19T00:00:00+00:00", "license": "lov2", "metrics":
+        {"dataservices": 0, "discussions": 0, "discussions_open": 0, "followers":
+        0, "followers_by_months": {"2024-08": 0, "2024-09": 0, "2024-10": 0, "2024-11":
+        0, "2024-12": 0, "2025-01": 0, "2025-02": 0, "2025-03": 0, "2025-04": 0, "2025-05":
+        0, "2025-06": 0, "2025-07": 0, "2025-08": 0}, "resources_downloads": 754,
+        "reuses": 0, "reuses_by_months": {"2024-08": 0, "2024-09": 0, "2024-10": 0,
+        "2024-11": 0, "2024-12": 0, "2025-01": 0, "2025-02": 0, "2025-03": 0, "2025-04":
+        0, "2025-05": 0, "2025-06": 0, "2025-07": 0, "2025-08": 0}, "views": 2084},
+        "organization": {"acronym": "MNCA", "badges": [{"kind": "local-authority"},
+        {"kind": "certified"}], "class": "Organization", "id": "59aea226c751df38f3f6834b",
+        "logo": "https://static.data.gouv.fr/avatars/08/d2b35780ce41768addccd1f563be92-original.png",
+        "logo_thumbnail": "https://static.data.gouv.fr/avatars/08/d2b35780ce41768addccd1f563be92-100.png",
+        "name": "M\u00e9tropole Nice C\u00f4te d''Azur", "page": "https://www.data.gouv.fr/organizations/nice-cote-dazur",
+        "permissions": {"delete": false, "edit": false, "harvest": false, "members":
+        false, "private": false}, "slug": "nice-cote-dazur", "uri": "https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/"},
+        "owner": null, "page": "https://www.data.gouv.fr/datasets/nombre-de-divorces-enregistres-par-mois-de-personnes-mariees-a-nice-pour-l-annee-2016",
+        "permissions": {"delete": false, "edit": false, "edit_resources": false},
+        "private": false, "quality": {"all_resources_available": true, "dataset_description_quality":
+        false, "has_open_format": true, "has_resources": true, "license": true, "resources_documentation":
+        false, "score": 0.3333333333333333, "spatial": false, "temporal_coverage":
+        false, "update_frequency": false}, "resources": [{"checksum": null, "created_at":
+        "2017-01-19T00:00:00+00:00", "description": "", "extras": {"analysis:checksum":
+        "0061ca93ec46e1f10c97f2d659caeb5ea717d321", "analysis:content-length": 27136,
+        "analysis:last-modified-at": "2017-01-19T00:00:00+00:00", "analysis:last-modified-detection":
+        "harvest-resource-metadata", "analysis:mime-type": "application/vnd.ms-excel",
+        "analysis:parsing:finished_at": "2025-04-09T18:48:58.509380+00:00", "analysis:parsing:parsing_table":
+        "3772a692bda3eabaaf3104ca848cf6ae", "analysis:parsing:started_at": "2025-04-09T18:48:57.929327+00:00",
+        "check:available": true, "check:cors:allow-headers": "X-CKAN-API-KEY, Authorization,
+        Content-Type", "check:cors:allow-methods": "POST, PUT, GET, DELETE, OPTIONS",
+        "check:cors:allow-origin": "*", "check:cors:status": 200, "check:count-availability":
+        7, "check:date": "2026-02-12T07:50:17.097518+00:00", "check:headers:charset":
+        "iso-8859-1", "check:headers:content-length": 27136, "check:headers:content-type":
+        "application/vnd.ms-excel", "check:id": 41377759, "check:status": 200, "check:timeout":
+        false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2017-01-19T13%3A37%3A12.770Z/2016-nombre-de-divorces-de-personnes-mariees-a-nice.xls"},
+        "filesize": null, "filetype": "remote", "format": "xls", "harvest": {"issued_at":
+        "2017-01-19T00:00:00+00:00", "modified_at": "2017-01-19T00:00:00+00:00"},
+        "id": "1c10f765-e91e-4727-add7-4425955b8fbe", "internal": {"created_at_internal":
+        "2017-09-05T15:32:52.955000+00:00", "last_modified_internal": "2017-01-19T00:00:00+00:00"},
+        "last_modified": "2017-01-19T00:00:00+00:00", "latest": "https://www.data.gouv.fr/api/1/datasets/r/1c10f765-e91e-4727-add7-4425955b8fbe",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        375}, "mime": "application/vnd.ms-excel", "preview_url": "https://explore.data.gouv.fr/fr/resources/1c10f765-e91e-4727-add7-4425955b8fbe",
+        "schema": null, "title": "2016 Nombre de divorces de personnes mari\u00e9es
+        \u00e0 Nice.xls", "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2017-01-19T13%3A37%3A12.770Z/2016-nombre-de-divorces-de-personnes-mariees-a-nice.xls"},
+        {"checksum": null, "created_at": "2017-01-19T00:00:00+00:00", "description":
+        "", "extras": {"analysis:checksum": "e6dee5405fb87d58af02011b5871a5d0aa27d929",
+        "analysis:content-length": 3757, "analysis:last-modified-at": "2017-01-19T00:00:00+00:00",
+        "analysis:last-modified-detection": "harvest-resource-metadata", "analysis:mime-type":
+        "application/vnd.oasis.opendocument.spreadsheet", "check:available": true,
+        "check:cors:allow-headers": "X-CKAN-API-KEY, Authorization, Content-Type",
+        "check:cors:allow-methods": "POST, PUT, GET, DELETE, OPTIONS", "check:cors:allow-origin":
+        "*", "check:cors:status": 200, "check:count-availability": 6, "check:date":
+        "2026-02-12T10:03:19.324068+00:00", "check:headers:charset": "iso-8859-1",
+        "check:headers:content-length": 3757, "check:headers:content-type": "application/vnd.oasis.opendocument.spreadsheet",
+        "check:id": 41380987, "check:status": 200, "check:timeout": false, "check:url":
+        "http://opendata.nicecotedazur.org/data/storage/f/2017-01-19T13%3A37%3A50.756Z/2016-nombre-de-divorces-de-personnes-mariees-a-nice.ods"},
+        "filesize": null, "filetype": "remote", "format": "ods", "harvest": {"issued_at":
+        "2017-01-19T00:00:00+00:00", "modified_at": "2017-01-19T00:00:00+00:00"},
+        "id": "a6756e69-676e-430c-9d60-78a450cc9a15", "internal": {"created_at_internal":
+        "2017-09-05T15:32:52.955000+00:00", "last_modified_internal": "2017-01-19T00:00:00+00:00"},
+        "last_modified": "2017-01-19T00:00:00+00:00", "latest": "https://www.data.gouv.fr/api/1/datasets/r/a6756e69-676e-430c-9d60-78a450cc9a15",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        169}, "mime": "application/vnd.oasis.opendocument.spreadsheet", "preview_url":
+        null, "schema": null, "title": "2016 Nombre de divorces de personnes mari\u00e9es
+        \u00e0 Nice.ods", "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2017-01-19T13%3A37%3A50.756Z/2016-nombre-de-divorces-de-personnes-mariees-a-nice.ods"},
+        {"checksum": null, "created_at": "2017-01-19T00:00:00+00:00", "description":
+        "", "extras": {"analysis:checksum": "cd960882d4c6ac2da9895a1e5ae0e6c27f5fef4b",
+        "analysis:content-length": 206, "analysis:last-modified-at": "2017-01-19T00:00:00+00:00",
+        "analysis:last-modified-detection": "harvest-resource-metadata", "analysis:mime-type":
+        "text/plain", "analysis:parsing:finished_at": "2025-04-09T13:15:12.908387+00:00",
+        "analysis:parsing:parsing_table": "6ceb1443dfe8526a4a98b43d328cde30", "analysis:parsing:started_at":
+        "2025-04-09T13:15:12.400197+00:00", "check:available": true, "check:cors:allow-headers":
+        "X-CKAN-API-KEY, Authorization, Content-Type", "check:cors:allow-methods":
+        "POST, PUT, GET, DELETE, OPTIONS", "check:cors:allow-origin": "*", "check:cors:status":
+        200, "check:count-availability": 138, "check:date": "2026-02-12T01:17:48.446258+00:00",
+        "check:headers:charset": "iso-8859-1", "check:headers:content-length": 206,
+        "check:headers:content-type": "text/csv", "check:id": 41346141, "check:status":
+        200, "check:timeout": false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2017-01-19T13%3A38%3A17.009Z/2016-nombre-de-divorces-de-personnes-mariees-a-nice.csv"},
+        "filesize": null, "filetype": "remote", "format": "csv", "harvest": {"issued_at":
+        "2017-01-19T00:00:00+00:00", "modified_at": "2017-01-19T00:00:00+00:00"},
+        "id": "2e0dccb2-cd02-4b44-ad64-8bdb7ae41539", "internal": {"created_at_internal":
+        "2017-09-05T15:32:52.956000+00:00", "last_modified_internal": "2017-01-19T00:00:00+00:00"},
+        "last_modified": "2017-01-19T00:00:00+00:00", "latest": "https://www.data.gouv.fr/api/1/datasets/r/2e0dccb2-cd02-4b44-ad64-8bdb7ae41539",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        505}, "mime": "text/csv", "preview_url": "https://explore.data.gouv.fr/fr/resources/2e0dccb2-cd02-4b44-ad64-8bdb7ae41539",
+        "schema": null, "title": "2016 Nombre de divorces de personnes mari\u00e9es
+        \u00e0 Nice.csv", "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2017-01-19T13%3A38%3A17.009Z/2016-nombre-de-divorces-de-personnes-mariees-a-nice.csv"}],
+        "schema": null, "slug": "nombre-de-divorces-enregistres-par-mois-de-personnes-mariees-a-nice-pour-l-annee-2016",
+        "spatial": null, "tags": ["divorce", "mariage", "nombre"], "temporal_coverage":
+        null, "title": "Nombre de divorces enregistr\u00e9s par mois de personnes
+        mari\u00e9es \u00e0 Nice pour l''ann\u00e9e 2016 ", "uri": "https://www.data.gouv.fr/api/1/datasets/nombre-de-divorces-enregistres-par-mois-de-personnes-mariees-a-nice-pour-l-annee-2016/"},
+        {"access_audiences": [], "access_type": "open", "access_type_reason": null,
+        "access_type_reason_category": null, "acronym": null, "archived": null, "authorization_request_url":
+        null, "badges": [], "contact_points": [], "created_at": "2014-05-14T00:00:00+00:00",
+        "deleted": null, "description": "Tableau de bord des adh\u00e9sions aux centres
+        d''animation et de loisirs - saison 2012-2013", "description_short": null,
+        "extras": {}, "featured": false, "frequency": "unknown", "frequency_date":
+        null, "harvest": {"backend": "CKAN", "created_at": "2014-05-14T00:00:00+00:00",
+        "domain": "opendata.nicecotedazur.org", "last_update": "2026-02-16T03:00:23.597000+00:00",
+        "remote_id": "007588e4-c102-4b06-bc77-ddd3f12442ca", "remote_url": "http://opendata.nicecotedazur.org/data/dataset/adhesions-aux-cal-de-nice-2012-2013",
+        "source_id": "59aea691c751df40c6e8212c"}, "id": "59aea784b595087a239169c1",
+        "internal": {"created_at_internal": "2014-05-14T00:00:00+00:00", "last_modified_internal":
+        "2019-05-17T00:00:00+00:00"}, "last_modified": "2019-05-17T00:00:00+00:00",
+        "last_update": "2014-05-14T16:34:19+00:00", "license": "lov2", "metrics":
+        {"dataservices": 0, "discussions": 0, "discussions_open": 0, "followers":
+        0, "followers_by_months": {"2024-08": 0, "2024-09": 0, "2024-10": 0, "2024-11":
+        0, "2024-12": 0, "2025-01": 0, "2025-02": 0, "2025-03": 0, "2025-04": 0, "2025-05":
+        0, "2025-06": 0, "2025-07": 0, "2025-08": 0}, "resources_downloads": 356,
+        "reuses": 0, "reuses_by_months": {"2024-08": 0, "2024-09": 0, "2024-10": 0,
+        "2024-11": 0, "2024-12": 0, "2025-01": 0, "2025-02": 0, "2025-03": 0, "2025-04":
+        0, "2025-05": 0, "2025-06": 0, "2025-07": 0, "2025-08": 0}, "views": 1623},
+        "organization": {"acronym": "MNCA", "badges": [{"kind": "local-authority"},
+        {"kind": "certified"}], "class": "Organization", "id": "59aea226c751df38f3f6834b",
+        "logo": "https://static.data.gouv.fr/avatars/08/d2b35780ce41768addccd1f563be92-original.png",
+        "logo_thumbnail": "https://static.data.gouv.fr/avatars/08/d2b35780ce41768addccd1f563be92-100.png",
+        "name": "M\u00e9tropole Nice C\u00f4te d''Azur", "page": "https://www.data.gouv.fr/organizations/nice-cote-dazur",
+        "permissions": {"delete": false, "edit": false, "harvest": false, "members":
+        false, "private": false}, "slug": "nice-cote-dazur", "uri": "https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/"},
+        "owner": null, "page": "https://www.data.gouv.fr/datasets/adhesions-aux-cal-de-nice-2012-2013",
+        "permissions": {"delete": false, "edit": false, "edit_resources": false},
+        "private": false, "quality": {"all_resources_available": true, "dataset_description_quality":
+        false, "has_open_format": true, "has_resources": true, "license": true, "resources_documentation":
+        false, "score": 0.3333333333333333, "spatial": false, "temporal_coverage":
+        false, "update_frequency": false}, "resources": [{"checksum": null, "created_at":
+        "2014-05-14T00:00:00+00:00", "description": "", "extras": {"analysis:last-modified-at":
+        "2014-05-14T13:47:02+00:00", "analysis:last-modified-detection": "last-modified-header",
+        "check:available": true, "check:cors:allow-headers": "X-CKAN-API-KEY, Authorization,
+        Content-Type", "check:cors:allow-methods": "POST, PUT, GET, DELETE, OPTIONS",
+        "check:cors:allow-origin": "*", "check:cors:status": 200, "check:count-availability":
+        3, "check:date": "2026-02-14T12:26:12.235395+00:00", "check:headers:content-length":
+        23040, "check:headers:content-type": "application/vnd.ms-excel", "check:id":
+        41520621, "check:status": 200, "check:timeout": false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-14T13%3A47%3A09.028Z/tableau-de-bord-adh-saison-2012-2013.xls"},
+        "filesize": null, "filetype": "remote", "format": "xls", "harvest": {"issued_at":
+        "2014-05-14T00:00:00+00:00"}, "id": "657433f4-d186-4369-a6f5-480349faac9e",
+        "internal": {"created_at_internal": "2017-09-05T15:32:52.065000+00:00", "last_modified_internal":
+        "2022-11-16T04:00:01.077000+00:00"}, "last_modified": "2014-05-14T13:47:02+00:00",
+        "latest": "https://www.data.gouv.fr/api/1/datasets/r/657433f4-d186-4369-a6f5-480349faac9e",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        329}, "mime": null, "preview_url": null, "schema": null, "title": "Tableau
+        de bord adh - saison 2012-2013.xls", "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-14T13%3A47%3A09.028Z/tableau-de-bord-adh-saison-2012-2013.xls"},
+        {"checksum": null, "created_at": "2014-05-14T00:00:00+00:00", "description":
+        "", "extras": {"analysis:checksum": "84613dc2a66af1593445b62d2129d27a29b62f5f",
+        "analysis:content-length": 8270, "analysis:last-modified-at": "2014-05-14T16:34:19+00:00",
+        "analysis:last-modified-detection": "last-modified-header", "analysis:mime-type":
+        "application/vnd.oasis.opendocument.spreadsheet", "check:available": true,
+        "check:count-availability": 45, "check:date": "2025-06-22T07:24:18.409092+00:00",
+        "check:headers:charset": "iso-8859-1", "check:headers:content-length": 8270,
+        "check:headers:content-type": "application/vnd.oasis.opendocument.spreadsheet",
+        "check:status": 200, "check:timeout": false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-14T16%3A34%3A25.988Z/tableau-de-bord-adh-saison-2012-2013.ods"},
+        "filesize": null, "filetype": "remote", "format": "ods", "harvest": {"issued_at":
+        "2014-05-14T00:00:00+00:00"}, "id": "8277ed53-1626-4190-b817-9920ab116608",
+        "internal": {"created_at_internal": "2017-09-05T15:32:52.066000+00:00", "last_modified_internal":
+        "2022-11-16T04:00:01.077000+00:00"}, "last_modified": "2014-05-14T16:34:19+00:00",
+        "latest": "https://www.data.gouv.fr/api/1/datasets/r/8277ed53-1626-4190-b817-9920ab116608",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        176}, "mime": null, "preview_url": null, "schema": null, "title": "tableau-de-bord-adh-saison-2012-2013.ods",
+        "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-14T16%3A34%3A25.988Z/tableau-de-bord-adh-saison-2012-2013.ods"}],
+        "schema": null, "slug": "adhesions-aux-cal-de-nice-2012-2013", "spatial":
+        null, "tags": ["adherent", "adhesion", "animation", "cal", "loisirs"], "temporal_coverage":
+        null, "title": "Adh\u00e9sions aux CAL de Nice 2012-2013", "uri": "https://www.data.gouv.fr/api/1/datasets/adhesions-aux-cal-de-nice-2012-2013/"},
+        {"access_audiences": [], "access_type": "open", "access_type_reason": null,
+        "access_type_reason_category": null, "acronym": null, "archived": null, "authorization_request_url":
+        null, "badges": [], "contact_points": [], "created_at": "2014-05-19T00:00:00+00:00",
+        "deleted": null, "description": "Limite des 9 anciens territoires de la Ville
+        de Nice (jusqu''\u00e0 juillet 2020). Les metadonn\u00e9es sont contenues
+        dans le fichier pdf.", "description_short": null, "extras": {"ckan:spatial-text":
+        "NICE", "spatial": "{\"type\": \"Polygon\", \"coordinates\": [[[7.17265614,
+        43.75403997], [7.30782801, 43.78783626], [7.33527091, 43.67807543], [7.20009904,
+        43.64427914], [7.17265614, 43.75403997]]]}", "spatial-text": "NICE"}, "featured":
+        false, "frequency": "unknown", "frequency_date": null, "harvest": {"backend":
+        "CKAN", "created_at": "2014-05-19T00:00:00+00:00", "domain": "opendata.nicecotedazur.org",
+        "last_update": "2026-02-16T03:00:29.423000+00:00", "remote_id": "08fa73bd-9baa-43aa-a0af-944c5d99bfb1",
+        "remote_url": "http://opendata.nicecotedazur.org/data/dataset/limite-des-9-anciens-territoires-de-la-ville-de-nice-jusqu-a-juillet-2020",
+        "source_id": "59aea691c751df40c6e8212c"}, "id": "59aea784b595087a239169c2",
+        "internal": {"created_at_internal": "2014-05-19T00:00:00+00:00", "last_modified_internal":
+        "2020-11-16T00:00:00+00:00"}, "last_modified": "2020-11-16T00:00:00+00:00",
+        "last_update": "2022-11-16T04:00:01.671000+00:00", "license": "lov2", "metrics":
+        {"dataservices": 0, "discussions": 0, "discussions_open": 0, "followers":
+        0, "followers_by_months": {"2024-08": 0, "2024-09": 0, "2024-10": 0, "2024-11":
+        0, "2024-12": 0, "2025-01": 0, "2025-02": 0, "2025-03": 0, "2025-04": 0, "2025-05":
+        0, "2025-06": 0, "2025-07": 0, "2025-08": 0}, "resources_downloads": 1702,
+        "reuses": 0, "reuses_by_months": {"2024-08": 0, "2024-09": 0, "2024-10": 0,
+        "2024-11": 0, "2024-12": 0, "2025-01": 0, "2025-02": 0, "2025-03": 0, "2025-04":
+        0, "2025-05": 0, "2025-06": 0, "2025-07": 0, "2025-08": 0}, "views": 2101},
+        "organization": {"acronym": "MNCA", "badges": [{"kind": "local-authority"},
+        {"kind": "certified"}], "class": "Organization", "id": "59aea226c751df38f3f6834b",
+        "logo": "https://static.data.gouv.fr/avatars/08/d2b35780ce41768addccd1f563be92-original.png",
+        "logo_thumbnail": "https://static.data.gouv.fr/avatars/08/d2b35780ce41768addccd1f563be92-100.png",
+        "name": "M\u00e9tropole Nice C\u00f4te d''Azur", "page": "https://www.data.gouv.fr/organizations/nice-cote-dazur",
+        "permissions": {"delete": false, "edit": false, "harvest": false, "members":
+        false, "private": false}, "slug": "nice-cote-dazur", "uri": "https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/"},
+        "owner": null, "page": "https://www.data.gouv.fr/datasets/limite-des-9-anciens-territoires-de-la-ville-de-nice-jusqua-juillet-2020",
+        "permissions": {"delete": false, "edit": false, "edit_resources": false},
+        "private": false, "quality": {"all_resources_available": true, "dataset_description_quality":
+        false, "has_open_format": true, "has_resources": true, "license": true, "resources_documentation":
+        false, "score": 0.4444444444444444, "spatial": true, "temporal_coverage":
+        false, "update_frequency": false}, "resources": [{"checksum": null, "created_at":
+        "2014-05-19T00:00:00+00:00", "description": "", "extras": {"analysis:checksum":
+        "5d93df569e7d24a2372bf4683e2d1c15d1d842e0", "analysis:content-length": 352200,
+        "analysis:last-modified-at": "2014-05-19T12:29:59+00:00", "analysis:last-modified-detection":
+        "last-modified-header", "analysis:mime-type": "text/plain", "analysis:parsing:finished_at":
+        "2025-06-22T09:40:29.621795+00:00", "analysis:parsing:parsing_table": "561f5520d44955ad07d14469497e4a8b",
+        "analysis:parsing:started_at": "2025-06-22T09:40:29.178544+00:00", "check:available":
+        true, "check:count-availability": 15, "check:date": "2025-06-22T09:40:24.639800+00:00",
+        "check:headers:content-length": 352200, "check:headers:content-type": "text/csv",
+        "check:status": 200, "check:timeout": false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A30%3A02.011Z/ig-territoire.csv"},
+        "filesize": null, "filetype": "remote", "format": "csv", "harvest": {"issued_at":
+        "2014-05-19T00:00:00+00:00"}, "id": "c23bb478-1536-4f02-a0aa-9e80da1afbbd",
+        "internal": {"created_at_internal": "2017-09-05T15:32:52.633000+00:00", "last_modified_internal":
+        "2022-11-16T04:00:01.671000+00:00"}, "last_modified": "2014-05-19T12:29:59+00:00",
+        "latest": "https://www.data.gouv.fr/api/1/datasets/r/c23bb478-1536-4f02-a0aa-9e80da1afbbd",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        507}, "mime": null, "preview_url": "https://explore.data.gouv.fr/fr/resources/c23bb478-1536-4f02-a0aa-9e80da1afbbd",
+        "schema": null, "title": "ig_territoire.csv", "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A30%3A02.011Z/ig-territoire.csv"},
+        {"checksum": null, "created_at": "2014-05-19T00:00:00+00:00", "description":
+        "", "extras": {"analysis:checksum": "8e7ad7eced02eabe4b51bd9f4e67154951871508",
+        "analysis:content-length": 352946, "analysis:mime-type": "application/json",
+        "check:available": true, "check:cors:allow-headers": "X-CKAN-API-KEY, Authorization,
+        Content-Type", "check:cors:allow-methods": "POST, PUT, GET, DELETE, OPTIONS",
+        "check:cors:allow-origin": "*", "check:cors:status": 200, "check:count-availability":
+        99, "check:date": "2026-02-15T13:08:51.600342+00:00", "check:headers:charset":
+        "iso-8859-1", "check:headers:content-length": 352946, "check:headers:content-type":
+        "text/plain", "check:id": 41681691, "check:status": 200, "check:timeout":
+        false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A30%3A14.497Z/ig-territoire.geojson"},
+        "filesize": null, "filetype": "remote", "format": "geojson", "harvest": {"issued_at":
+        "2014-05-19T00:00:00+00:00"}, "id": "9349365d-ba96-4f7c-aace-1c2776287f5d",
+        "internal": {"created_at_internal": "2017-09-05T15:32:52.634000+00:00", "last_modified_internal":
+        "2022-11-16T04:00:01.671000+00:00"}, "last_modified": "2022-11-16T04:00:01.671000+00:00",
+        "latest": "https://www.data.gouv.fr/api/1/datasets/r/9349365d-ba96-4f7c-aace-1c2776287f5d",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        456}, "mime": null, "preview_url": null, "schema": null, "title": "ig_territoire.geojson",
+        "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A30%3A14.497Z/ig-territoire.geojson"},
+        {"checksum": null, "created_at": "2014-05-19T00:00:00+00:00", "description":
+        "", "extras": {"analysis:last-modified-at": "2014-05-19T12:30:22+00:00", "analysis:last-modified-detection":
+        "last-modified-header", "check:available": true, "check:cors:allow-headers":
+        "X-CKAN-API-KEY, Authorization, Content-Type", "check:cors:allow-methods":
+        "POST, PUT, GET, DELETE, OPTIONS", "check:cors:allow-origin": "*", "check:cors:status":
+        200, "check:count-availability": 14, "check:date": "2026-02-14T21:41:46.361522+00:00",
+        "check:headers:charset": "iso-8859-1", "check:headers:content-length": 352519,
+        "check:headers:content-type": "application/json", "check:id": 41575343, "check:status":
+        200, "check:timeout": false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A30%3A24.522Z/ig-territoire.json"},
+        "filesize": null, "filetype": "remote", "format": "json", "harvest": {"issued_at":
+        "2014-05-19T00:00:00+00:00"}, "id": "917d10b5-ca1a-4e10-921d-a549a370be65",
+        "internal": {"created_at_internal": "2017-09-05T15:32:52.634000+00:00", "last_modified_internal":
+        "2022-11-16T04:00:01.671000+00:00"}, "last_modified": "2014-05-19T12:30:22+00:00",
+        "latest": "https://www.data.gouv.fr/api/1/datasets/r/917d10b5-ca1a-4e10-921d-a549a370be65",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        421}, "mime": null, "preview_url": null, "schema": null, "title": "ig_territoire.json",
+        "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A30%3A24.522Z/ig-territoire.json"},
+        {"checksum": null, "created_at": "2014-05-19T00:00:00+00:00", "description":
+        "", "extras": {"analysis:last-modified-at": "2014-05-19T12:30:33+00:00", "analysis:last-modified-detection":
+        "last-modified-header", "check:available": true, "check:cors:allow-headers":
+        "X-CKAN-API-KEY, Authorization, Content-Type", "check:cors:allow-methods":
+        "POST, PUT, GET, DELETE, OPTIONS", "check:cors:allow-origin": "*", "check:cors:status":
+        200, "check:count-availability": 7, "check:date": "2026-02-15T04:32:43.080995+00:00",
+        "check:headers:charset": "iso-8859-1", "check:headers:content-length": 151884,
+        "check:headers:content-type": "application/vnd.google-earth.kmz", "check:id":
+        41615345, "check:status": 200, "check:timeout": false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A30%3A35.437Z/ig-territoire.kmz"},
+        "filesize": null, "filetype": "remote", "format": "kmz", "harvest": {"issued_at":
+        "2014-05-19T00:00:00+00:00"}, "id": "f5c88dde-ac95-4d24-a9aa-dbae2f5af3be",
+        "internal": {"created_at_internal": "2017-09-05T15:32:52.635000+00:00", "last_modified_internal":
+        "2022-11-16T04:00:01.671000+00:00"}, "last_modified": "2014-05-19T12:30:33+00:00",
+        "latest": "https://www.data.gouv.fr/api/1/datasets/r/f5c88dde-ac95-4d24-a9aa-dbae2f5af3be",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        203}, "mime": null, "preview_url": null, "schema": null, "title": "ig_territoire.kmz",
+        "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A30%3A35.437Z/ig-territoire.kmz"},
+        {"checksum": null, "created_at": "2014-05-19T00:00:00+00:00", "description":
+        "", "extras": {"analysis:last-modified-at": "2014-05-19T12:30:43+00:00", "analysis:last-modified-detection":
+        "last-modified-header", "check:available": true, "check:cors:allow-headers":
+        "X-CKAN-API-KEY, Authorization, Content-Type", "check:cors:allow-methods":
+        "POST, PUT, GET, DELETE, OPTIONS", "check:cors:allow-origin": "*", "check:cors:status":
+        200, "check:count-availability": 1, "check:date": "2026-02-15T16:08:36.300488+00:00",
+        "check:headers:charset": "iso-8859-1", "check:headers:content-length": 102686,
+        "check:headers:content-type": "application/zip", "check:id": 41702180, "check:status":
+        200, "check:timeout": false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A30%3A45.982Z/ig-territoirergf93l93.zip"},
+        "filesize": null, "filetype": "remote", "format": "shp", "harvest": {"issued_at":
+        "2014-05-19T00:00:00+00:00"}, "id": "4fb55840-5e1b-42c3-bd2e-4c006804a571",
+        "internal": {"created_at_internal": "2017-09-05T15:32:52.635000+00:00", "last_modified_internal":
+        "2022-11-16T04:00:01.671000+00:00"}, "last_modified": "2014-05-19T12:30:43+00:00",
+        "latest": "https://www.data.gouv.fr/api/1/datasets/r/4fb55840-5e1b-42c3-bd2e-4c006804a571",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        243}, "mime": null, "preview_url": null, "schema": null, "title": "ig_territoireRGF93L93_shapefile.zip",
+        "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A30%3A45.982Z/ig-territoirergf93l93.zip"},
+        {"checksum": null, "created_at": "2014-05-19T00:00:00+00:00", "description":
+        "", "extras": {"analysis:last-modified-at": "2014-05-19T12:31:01+00:00", "analysis:last-modified-detection":
+        "last-modified-header", "check:available": true, "check:cors:allow-headers":
+        "X-CKAN-API-KEY, Authorization, Content-Type", "check:cors:allow-methods":
+        "POST, PUT, GET, DELETE, OPTIONS", "check:cors:allow-origin": "*", "check:cors:status":
+        200, "check:count-availability": 24, "check:date": "2026-02-14T21:37:41.584048+00:00",
+        "check:headers:charset": "iso-8859-1", "check:headers:content-length": 150098,
+        "check:headers:content-type": "application/zip", "check:id": 41575057, "check:status":
+        200, "check:timeout": false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A31%3A03.905Z/ig-territoirewgs84.zip"},
+        "filesize": null, "filetype": "remote", "format": "shp", "harvest": {"issued_at":
+        "2014-05-19T00:00:00+00:00"}, "id": "39a189d9-8e66-4bf9-84a1-24aedd94dd4e",
+        "internal": {"created_at_internal": "2017-09-05T15:32:52.636000+00:00", "last_modified_internal":
+        "2022-11-16T04:00:01.671000+00:00"}, "last_modified": "2014-05-19T12:31:01+00:00",
+        "latest": "https://www.data.gouv.fr/api/1/datasets/r/39a189d9-8e66-4bf9-84a1-24aedd94dd4e",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        220}, "mime": null, "preview_url": null, "schema": null, "title": "ig_territoireWGS84_shapefile",
+        "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A31%3A03.905Z/ig-territoirewgs84.zip"},
+        {"checksum": null, "created_at": "2014-05-19T00:00:00+00:00", "description":
+        "", "extras": {"analysis:last-modified-at": "2014-05-19T12:34:48+00:00", "analysis:last-modified-detection":
+        "last-modified-header", "check:available": true, "check:cors:allow-headers":
+        "X-CKAN-API-KEY, Authorization, Content-Type", "check:cors:allow-methods":
+        "POST, PUT, GET, DELETE, OPTIONS", "check:cors:allow-origin": "*", "check:cors:status":
+        200, "check:count-availability": 5, "check:date": "2026-02-15T02:07:55.057079+00:00",
+        "check:headers:charset": "iso-8859-1", "check:headers:content-length": 10256,
+        "check:headers:content-type": "application/pdf", "check:id": 41600904, "check:status":
+        200, "check:timeout": false, "check:url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A34%3A50.506Z/ig-territoire.pdf"},
+        "filesize": null, "filetype": "remote", "format": "pdf", "harvest": {"issued_at":
+        "2014-05-19T00:00:00+00:00"}, "id": "60802a6e-97b6-41cf-8ee5-fcf9093ae3f6",
+        "internal": {"created_at_internal": "2017-09-05T15:32:52.636000+00:00", "last_modified_internal":
+        "2022-11-16T04:00:01.671000+00:00"}, "last_modified": "2014-05-19T12:34:48+00:00",
+        "latest": "https://www.data.gouv.fr/api/1/datasets/r/60802a6e-97b6-41cf-8ee5-fcf9093ae3f6",
+        "metrics": {"nb_hits": 0, "nb_uniq_visitors": 0, "nb_visits": 0, "views":
+        224}, "mime": null, "preview_url": null, "schema": null, "title": "ig_territoire.pdf",
+        "type": "main", "url": "http://opendata.nicecotedazur.org/data/storage/f/2014-05-19T12%3A34%3A50.506Z/ig-territoire.pdf"}],
+        "schema": null, "slug": "limite-des-9-anciens-territoires-de-la-ville-de-nice-jusqua-juillet-2020",
+        "spatial": {"geom": {"coordinates": [[[[7.17265614, 43.75403997], [7.30782801,
+        43.78783626], [7.33527091, 43.67807543], [7.20009904, 43.64427914], [7.17265614,
+        43.75403997]]]], "type": "MultiPolygon"}, "granularity": "other", "zones":
+        []}, "tags": ["metropole", "nca", "shape", "sig", "territoire"], "temporal_coverage":
+        null, "title": "Limite des 9 anciens territoires de la Ville de Nice (jusqu''\u00e0
+        juillet 2020)", "uri": "https://www.data.gouv.fr/api/1/datasets/limite-des-9-anciens-territoires-de-la-ville-de-nice-jusqua-juillet-2020/"}],
+        "next_page": "https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/datasets/?page=2&page_size=5",
+        "page": 1, "page_size": 5, "previous_page": null, "total": 326}'
+  recorded_at: Mon, 16 Feb 2026 05:36:36 GMT
+recorded_with: VCR 6.4.0

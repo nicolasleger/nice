@@ -1,6 +1,9 @@
 require 'ckan'
+
 require_relative 'nice/client'
 require_relative 'nice/version'
+
+require_relative 'nice/data_gouv/client'
 
 module Nice
   class Error < StandardError; end

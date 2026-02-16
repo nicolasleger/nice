@@ -22,6 +22,12 @@ VCR.configure do |config|
   config.filter_sensitive_data('<NICE_CKAN_API_KEY>') do |interaction|
     interaction.request.headers['X-CKAN-API-Key']&.first
   end
+
+  # Filter data.gouv.fr API key
+  config.filter_sensitive_data('<DATA_GOUV_API_KEY>') { ENV['DATA_GOUV_API_KEY'] }
+  config.filter_sensitive_data('<DATA_GOUV_API_KEY>') do |interaction|
+    interaction.request.headers['X-API-KEY']&.first
+  end
 end
 
 RSpec.configure do |config|
