@@ -1,12 +1,8 @@
 {
   "packages": {
     ".": {
-      "release-type": "ruby",
-      "include-component-in-tag": false,
-      "extra-files": [
-        "lib/nice/version.rb",
-        "Gemfile.lock"
-      ]
+      "package-name": "nice",
+      "version-file": "lib/nice/version.rb"
     }
   }
 }
