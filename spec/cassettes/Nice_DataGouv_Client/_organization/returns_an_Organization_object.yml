@@ -1,0 +1,154 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 308
+      message: PERMANENT REDIRECT
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 16 Feb 2026 05:36:36 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '309'
+      Location:
+      - https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/
+      Vary:
+      - Origin, Cookie
+      Pragma:
+      - public
+      Cache-Control:
+      - public
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: |
+        <!doctype html>
+        <html lang=en>
+        <title>Redirecting...</title>
+        <h1>Redirecting...</h1>
+        <p>You should be redirected automatically to the target URL: <a href="https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/">https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/</a>. If not, click the link.
+  recorded_at: Mon, 16 Feb 2026 05:36:36 GMT
+- request:
+    method: get
+    uri: https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 16 Feb 2026 05:36:36 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin, Cookie
+      Pragma:
+      - public
+      Cache-Control:
+      - public
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"acronym": "MNCA", "badges": [{"kind": "local-authority"}, {"kind":
+        "certified"}], "business_number_id": "20003019500115", "created_at": "2017-09-05T15:09:58.664000+00:00",
+        "deleted": null, "description": "Le portail Open data mutualis\u00e9 de Nice
+        C\u00f4te d''Azur et de ses partenaires s\u2019inscrit dans un projet plus
+        vaste de **M\u00e9tropole interconnect\u00e9e et durable**.\n\nEn mettant
+        \u00e0 disposition leurs donn\u00e9es sur le portail Open data mutualis\u00e9,
+        la M\u00e9tropole Nice C\u00f4te d\u2019Azur et ses partenaires veulent favoriser
+        **l\u2019exp\u00e9rimentation, l\u2019innovation et la cr\u00e9ation de services**
+        sur leur territoire.\n\n****L\u2019id\u00e9e est simple****: permettre \u00e0
+        des tiers et notamment des d\u00e9veloppeurs et entrepreneurs d''exploiter
+        certaines donn\u00e9es afin d''imaginer de nouvelles mani\u00e8res de les
+        utiliser et de les valoriser en cr\u00e9ant de nouveaux services mobiles et
+        applications.\n\nla M\u00e9tropole Nice C\u00f4te d\u2019Azur est membre de
+        l\u2019association OPENDATA FRANCE.", "extras": {"siretisation:collectivite_territoriale:code_insee":
+        "nan", "siretisation:collectivite_territoriale:niveau": "epci", "siretisation:denomination_unite_legale":
+        "METROPOLE NICE COTE D AZUR", "siretisation:est_collectivite_territoriale":
+        "True", "siretisation:est_service_public": "True", "siretisation:found_siret":
+        "20003019500115"}, "id": "59aea226c751df38f3f6834b", "last_modified": "2026-01-29T03:01:25.427000+00:00",
+        "logo": "https://static.data.gouv.fr/avatars/08/d2b35780ce41768addccd1f563be92-original.png",
+        "logo_thumbnail": "https://static.data.gouv.fr/avatars/08/d2b35780ce41768addccd1f563be92-100.png",
+        "members": [{"label": "Administrateur", "role": "admin", "since": "2018-05-23T19:00:30.655000+00:00",
+        "user": {"avatar": null, "avatar_thumbnail": null, "class": "User", "email":
+        "***@nicecotedazur.org", "first_name": "OpenData", "id": "5af06a7cc751df34c732e122",
+        "last_login_at": null, "last_name": "MNCA", "page": "https://www.data.gouv.fr/users/od-nca",
+        "slug": "od-nca", "uri": "https://www.data.gouv.fr/api/1/users/od-nca/"}},
+        {"label": "\u00c9diteur", "role": "editor", "since": "2018-12-31T10:49:22.105000+00:00",
+        "user": {"avatar": null, "avatar_thumbnail": null, "class": "User", "email":
+        "***@nicecotedazur.org", "first_name": "OPENDATA", "id": "5c1cf4078b4c415baf2bc447",
+        "last_login_at": null, "last_name": "VILLE DE NICE", "page": "https://www.data.gouv.fr/users/aurelie-forest-1",
+        "slug": "aurelie-forest-1", "uri": "https://www.data.gouv.fr/api/1/users/aurelie-forest-1/"}},
+        {"label": "\u00c9diteur", "role": "editor", "since": "2022-05-19T16:04:08.989000+00:00",
+        "user": {"avatar": null, "avatar_thumbnail": null, "class": "User", "email":
+        "***@nicecotedazur.org", "first_name": "Elisa", "id": "626b969dbb9bb5f8e41a02bb",
+        "last_login_at": null, "last_name": "Delacroix", "page": "https://www.data.gouv.fr/users/elisa-delacroix",
+        "slug": "elisa-delacroix", "uri": "https://www.data.gouv.fr/api/1/users/elisa-delacroix/"}},
+        {"label": "\u00c9diteur", "role": "editor", "since": "2025-02-03T11:20:31.294000+00:00",
+        "user": {"avatar": null, "avatar_thumbnail": null, "class": "User", "email":
+        "***@nicecotedazur.org", "first_name": "jerome", "id": "677fd4717ae8cc5254924ebb",
+        "last_login_at": null, "last_name": "godard", "page": "https://www.data.gouv.fr/users/jerome-godard-1",
+        "slug": "jerome-godard-1", "uri": "https://www.data.gouv.fr/api/1/users/jerome-godard-1/"}},
+        {"label": "\u00c9diteur", "role": "editor", "since": "2025-02-03T11:20:35.454000+00:00",
+        "user": {"avatar": null, "avatar_thumbnail": null, "class": "User", "email":
+        "***@lignesdazur.fr", "first_name": "Alain", "id": "66b610ee6a2cc5de36dfd9d2",
+        "last_login_at": null, "last_name": "Bottero", "page": "https://www.data.gouv.fr/users/alain-bottero",
+        "slug": "alain-bottero", "uri": "https://www.data.gouv.fr/api/1/users/alain-bottero/"}}],
+        "metrics": {"dataservices": 0, "dataservices_by_months": 0, "datasets": 288,
+        "datasets_by_months": {"2025-01": 0, "2025-02": 2, "2025-03": 0, "2025-04":
+        0, "2025-05": 0, "2025-06": 5, "2025-07": 0, "2025-08": 1, "2025-09": 0, "2025-10":
+        0, "2025-11": 0, "2025-12": 0, "2026-01": 2}, "datasets_followers_by_months":
+        {"2025-01": 0, "2025-02": 0, "2025-03": 0, "2025-04": 0, "2025-05": 0, "2025-06":
+        0, "2025-07": 0, "2025-08": 0, "2025-09": 0, "2025-10": 0, "2025-11": 0, "2025-12":
+        0, "2026-01": 0}, "datasets_reuses_by_months": {"2025-01": 0, "2025-02": 0,
+        "2025-03": 0, "2025-04": 1, "2025-05": 0, "2025-06": 0, "2025-07": 0, "2025-08":
+        0, "2025-09": 0, "2025-10": 0, "2025-11": 0, "2025-12": 0, "2026-01": 0},
+        "followers": 7, "members": 6, "reuses": 0, "reuses_by_months": 0, "reuses_followers_by_months":
+        0, "views": 720527}, "name": "M\u00e9tropole Nice C\u00f4te d''Azur", "page":
+        "https://www.data.gouv.fr/organizations/nice-cote-dazur", "permissions": {"delete":
+        false, "edit": false, "harvest": false, "members": false, "private": false},
+        "slug": "nice-cote-dazur", "uri": "https://www.data.gouv.fr/api/1/organizations/nice-cote-dazur/",
+        "url": "http://opendata.nicecotedazur.org/"}'
+  recorded_at: Mon, 16 Feb 2026 05:36:36 GMT
+recorded_with: VCR 6.4.0
