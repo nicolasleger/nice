@@ -3,6 +3,8 @@ fileignoreconfig:
   checksum: 353d470f3ce5ab7497984d7f64877eb0287f1b4475ce5c1c3ab1cf24b0cf0c2a
 - filename: examples/usage.rb
   checksum: 70b892496fb225a1809d9d8fc8802c2b0954e82635fb113a1d67bbe1eee71ab0
+- filename: Gemfile.lock
+  checksum: 842829f911061a96b167d34b51017a9135123c269b135278941d9be8c5b715e3
 - filename: spec/nice/client_spec.rb
   checksum: ""
   ignore_detectors: [filecontent]
