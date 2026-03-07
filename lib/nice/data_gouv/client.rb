@@ -10,6 +10,7 @@ module Nice
       include HTTParty
       base_uri 'https://www.data.gouv.fr/api/1'
       follow_redirects true
+      default_timeout 30
 
       attr_reader :api_key
 
