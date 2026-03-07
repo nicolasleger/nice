@@ -46,7 +46,7 @@ jobs:
         bundler-cache: true
 
     - name: Build gem
-      run: gem build $GEM_NAME.gemspec
+      run: gem build ${{ env.GEM_NAME }}.gemspec
 
     - name: Upload gem artifact
       uses: actions/upload-artifact@v4
