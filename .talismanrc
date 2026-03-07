@@ -1,0 +1,21 @@
+fileignoreconfig:
+- filename: Gemfile
+  checksum: 353d470f3ce5ab7497984d7f64877eb0287f1b4475ce5c1c3ab1cf24b0cf0c2a
+- filename: spec/nice/client_spec.rb
+  checksum: ""
+  ignore_detectors: [filecontent]
+- filename: spec/spec_helper.rb
+  checksum: ""
+  ignore_detectors: [filecontent]
+- filename: spec/cassettes/**/*
+  checksum: ""
+  ignore_detectors: [filecontent]
+
+scopeconfig:
+- scope: ruby
+  ignore_detectors: []
+
+allowed_patterns:
+- NICE_CKAN_API_KEY
+- test-api-key
+- <NICE_CKAN_API_KEY>
