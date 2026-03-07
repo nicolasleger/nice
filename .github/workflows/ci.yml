@@ -35,6 +35,8 @@ jobs:
   build:
     runs-on: ubuntu-slim
     needs: test
+    env:
+      GEM_NAME: nice
 
     steps:
     - uses: actions/checkout@v5
@@ -51,5 +53,5 @@ jobs:
     - name: Upload gem artifact
       uses: actions/upload-artifact@v4
       with:
-        name: nice-gem
+        name: ${{ env.GEM_NAME }}-gem
         path: ${{ env.GEM_NAME }}-*.gem
