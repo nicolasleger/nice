@@ -10,6 +10,7 @@ module Nice
       include HTTParty
       base_uri 'https://www.data.gouv.fr/api/1'
       follow_redirects true
+      default_timeout 30
 
       attr_reader :api_key
 
@@ -52,6 +53,7 @@ module Nice
 
       # Get organization by ID or slug
       def organization(id_or_slug)
+        validate_id_or_slug!(id_or_slug)
         response = self.class.get("/organizations/#{id_or_slug}", headers: headers)
         handle_response(response) do |data|
           Organization.new(data)
@@ -60,6 +62,7 @@ module Nice
 
       # List organization datasets
       def organization_datasets(org_id_or_slug, page: 1, page_size: 20)
+        validate_id_or_slug!(org_id_or_slug)
         response = self.class.get(
           "/organizations/#{org_id_or_slug}/datasets",
           query: { page: page, page_size: page_size },
@@ -72,6 +75,7 @@ module Nice
 
       # Get dataset by ID or slug
       def dataset(id_or_slug)
+        validate_id_or_slug!(id_or_slug)
         response = self.class.get("/datasets/#{id_or_slug}/", headers: headers)
         handle_response(response) do |data|
           Dataset.new(data)
@@ -79,6 +83,12 @@ module Nice
       end
 
       private
+
+      VALID_ID_OR_SLUG = /\A[\w\-]+\z/
+
+      def validate_id_or_slug!(value)
+        raise ArgumentError, "Invalid ID or slug: #{value.inspect}" unless value.to_s.match?(VALID_ID_OR_SLUG)
+      end
 
       def headers
         headers = { 'Accept' => 'application/json' }

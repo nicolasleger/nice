@@ -28,9 +28,5 @@ module Nice
       @api_key = ENV['NICE_CKAN_API_KEY']
     end
 
-    def validate!
-      raise ConfigurationError, "CKAN URL is required" if ckan_url.nil? || ckan_url.empty?
-      raise ConfigurationError, "API key is required" if api_key.nil? || api_key.empty?
-    end
   end
 end

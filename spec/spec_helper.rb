@@ -16,18 +16,13 @@ VCR.configure do |config|
 
   # Filter sensitive data from cassettes
   config.filter_sensitive_data('<NICE_CKAN_API_KEY>') { ENV['NICE_CKAN_API_KEY'] }
-  config.filter_sensitive_data('<NICE_CKAN_API_KEY>') do |interaction|
-    interaction.request.headers['Authorization']&.first
-  end
-  config.filter_sensitive_data('<NICE_CKAN_API_KEY>') do |interaction|
-    interaction.request.headers['X-CKAN-API-Key']&.first
+  %w[Authorization X-CKAN-API-Key X-Ckan-Api-Key].each do |header|
+    config.filter_sensitive_data('<NICE_CKAN_API_KEY>') { |i| i.request.headers[header]&.first }
   end
 
   # Filter data.gouv.fr API key
   config.filter_sensitive_data('<DATA_GOUV_API_KEY>') { ENV['DATA_GOUV_API_KEY'] }
-  config.filter_sensitive_data('<DATA_GOUV_API_KEY>') do |interaction|
-    interaction.request.headers['X-API-KEY']&.first
-  end
+  config.filter_sensitive_data('<DATA_GOUV_API_KEY>') { |i| i.request.headers['X-API-KEY']&.first }
 end
 
 RSpec.configure do |config|

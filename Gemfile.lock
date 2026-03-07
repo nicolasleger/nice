@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/nicolasleger/ckan.git
   revision: 0f89d5f23b62b83c98b5371d9243e36c2d42839e
-  branch: feat/add-ckan-v3-support
+  ref: 0f89d5f23b62b83c98b5371d9243e36c2d42839e
   specs:
     ckan (0.0.3)
 
@@ -9,7 +9,7 @@ PATH
   remote: .
   specs:
     nice (1.0.1)
-      ckan
+      ckan (~> 0.0.3)
       httparty (~> 0.21)
       json (~> 2.6)
 

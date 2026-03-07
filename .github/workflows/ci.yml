@@ -9,13 +9,12 @@ on:
 jobs:
   test:
     runs-on: ubuntu-slim
-    environment: ${{ github.ref == 'refs/heads/main' && 'test-on-main' || 'test' }}
     strategy:
       matrix:
         ruby-version: ['3.2', '3.3', '3.4', '4.0']
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
     - name: Set up Ruby ${{ matrix.ruby-version }}
       uses: ruby/setup-ruby@v1
@@ -28,8 +27,6 @@ jobs:
 
     - name: Run tests
       run: bundle exec rake
-      env:
-        NICE_CKAN_API_KEY: ${{ secrets.NICE_CKAN_API_KEY }}
 
     - name: Run RuboCop
       run: bundle exec rubocop
@@ -38,9 +35,11 @@ jobs:
   build:
     runs-on: ubuntu-slim
     needs: test
+    env:
+      GEM_NAME: nice
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
@@ -49,10 +48,10 @@ jobs:
         bundler-cache: true
 
     - name: Build gem
-      run: gem build nice.gemspec
+      run: gem build ${{ env.GEM_NAME }}.gemspec
 
     - name: Upload gem artifact
       uses: actions/upload-artifact@v4
       with:
-        name: nice-gem
-        path: nice-*.gem
+        name: ${{ env.GEM_NAME }}-gem
+        path: ${{ env.GEM_NAME }}-*.gem

@@ -25,8 +25,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  # CKAN dependency
-  spec.add_dependency "ckan"
+  # CKAN dependency — pin to known-good version until upstream gem supports CKAN v3
+  spec.add_dependency "ckan", "~> 0.0.3"
   
   # Additional useful dependencies
   spec.add_dependency "httparty", "~> 0.21"

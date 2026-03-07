@@ -24,6 +24,6 @@ jobs:
           ruby-version: ${{ vars.RUBY_VERSION }}
           bundler-cache: true
       - name: Build gem
-        run: gem build *.gemspec
+        run: gem build ${{ env.GEM_NAME }}.gemspec
       - name: Publish gem
         uses: rubygems/release-gem@v1
