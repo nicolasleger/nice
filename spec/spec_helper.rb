@@ -20,7 +20,7 @@ VCR.configure do |config|
     interaction.request.headers['Authorization']&.first
   end
   config.filter_sensitive_data('<NICE_CKAN_API_KEY>') do |interaction|
-    interaction.request.headers['X-CKAN-API-Key']&.first
+    interaction.request.headers['X-Ckan-Api-Key']&.first
   end
 
   # Filter data.gouv.fr API key
