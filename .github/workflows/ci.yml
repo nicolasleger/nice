@@ -49,10 +49,10 @@ jobs:
         bundler-cache: true
 
     - name: Build gem
-      run: gem build nice.gemspec
+      run: gem build $GEM_NAME.gemspec
 
     - name: Upload gem artifact
       uses: actions/upload-artifact@v4
       with:
         name: nice-gem
-        path: nice-*.gem
+        path: ${{ env.GEM_NAME }}-*.gem
