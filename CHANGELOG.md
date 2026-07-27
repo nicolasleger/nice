@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/nicolasleger/nice/compare/v1.1.0...v1.1.1) (2026-07-27)
+
+
+### Bug Fixes
+
+* bump version to 1.1.0 and set release-please ruby strategy ([52eddf6](https://github.com/nicolasleger/nice/commit/52eddf6b621131bc35c48c954637c61ae1bc15e1))
+* **ci:** build gem via vars.GEM_NAME in publish workflow ([2e6f04e](https://github.com/nicolasleger/nice/commit/2e6f04eafac38d1fd0d760d7fc0a45af0d8880c1))
+
 ## [1.1.0](https://github.com/nicolasleger/nice/compare/v1.0.1...v1.1.0) (2026-07-27)
 
 
