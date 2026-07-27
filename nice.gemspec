@@ -31,6 +31,8 @@ Gem::Specification.new do |spec|
   # Additional useful dependencies
   spec.add_dependency "httparty", "~> 0.21"
   spec.add_dependency "json", "~> 2.6"
+  # HTML parsing for the recruitment site (no public API/feed available)
+  spec.add_dependency "nokogiri", "~> 1.15"
 
   # Development dependencies
   spec.add_development_dependency "rake", "~> 13.0"

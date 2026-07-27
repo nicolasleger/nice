@@ -100,6 +100,44 @@ groups = client.list_groups
 resource = client.get_resource("resource-id")
 ```
 
+### Job offers (recrutement.nicecotedazur.org)
+
+Job offers are read from the metropolitan recruitment site (Eqwa ATS). The
+platform exposes no public API or feed, so the client parses the
+server-rendered pages — expect occasional breakage if the site's markup
+changes.
+
+```ruby
+recruitment = Nice::Recruitment::Client.new
+
+# All current offers (one request; summary fields)
+offers = recruitment.jobs
+puts "#{offers.count} offers"
+
+# Filtered search — pass ids or exact labels, see recruitment.search_options
+recruitment.jobs(keywords: "informatique")
+recruitment.jobs(categories: %w[A B], sectors: ["Technique"])
+recruitment.jobs(domain: "INFORMATIQUE & TIC", entity: "Ville de Nice")
+
+# Full detail for one offer
+offer = recruitment.job(offers.first.id)
+offer.title        # => "Auxiliaire de Puériculture vacataire (H/F)"
+offer.contract     # => "Contrat vacataire"
+offer.organization # => "VILLE DE NICE"
+offer.deadline     # => Date (or nil)
+offer.description  # plain text
+offer.profile      # plain text
+
+# Full details for everything (one request per offer — be considerate)
+detailed = recruitment.jobs.map { |o| recruitment.job(o.id) }
+```
+
+Listing offers carry summary fields (`updated_at`, `recruitment_nature`);
+detail offers carry the full set (`contract`, `organization`, `department`,
+`location`, `workplace`, `sector`, `domain`, `employment_framework`,
+`introduction`, `description`, `profile`). Fields missing from a given
+source are `nil`.
+
 ## Development
 
 After checking out the repo, run `bundle install` to install dependencies.
