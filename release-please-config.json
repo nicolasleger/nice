@@ -2,6 +2,7 @@
   "packages": {
     ".": {
       "package-name": "nice",
+      "release-type": "ruby",
       "version-file": "lib/nice/version.rb",
       "extra-files": ["Gemfile.lock"]
     }
