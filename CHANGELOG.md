@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/nicolasleger/nice/compare/v1.0.1...v1.1.0) (2026-07-27)
+
+
+### Features
+
+* add recruitment job offers client ([#12](https://github.com/nicolasleger/nice/issues/12)) ([92fd2de](https://github.com/nicolasleger/nice/commit/92fd2dedacdf5d42c9cfe997b387e27c06b4bdbc))
+
+
+### Bug Fixes
+
+* security remediation ([#8](https://github.com/nicolasleger/nice/issues/8)) ([daf837c](https://github.com/nicolasleger/nice/commit/daf837c9d212d3383cd217edc1a53f09cf2ff91a))
+
 ## [1.0.1](https://github.com/nicolasleger/nice/compare/v1.0.0...v1.0.1) (2026-02-16)
 
 
