@@ -2,9 +2,17 @@ fileignoreconfig:
 - filename: Gemfile
   checksum: 353d470f3ce5ab7497984d7f64877eb0287f1b4475ce5c1c3ab1cf24b0cf0c2a
 - filename: examples/usage.rb
-  checksum: 70b892496fb225a1809d9d8fc8802c2b0954e82635fb113a1d67bbe1eee71ab0
+  checksum: a76ef74606f089575e525b4eb152e4d55f6a089fbaccf7cf602ce976639492b9
 - filename: Gemfile.lock
-  checksum: 842829f911061a96b167d34b51017a9135123c269b135278941d9be8c5b715e3
+  checksum: 8019973a6e588d2330e19364ed8c0205a761586e51fd6da46bf50fd42a3dbeb2
+- filename: README.md
+  checksum: 2f48f043b33ba99067ca5fcd248bf3506b0a90870955e84bdf426de6ffeda470
+- filename: lib/nice/recruitment/client.rb
+  checksum: 9db5cd0f085195b53152021dffa7eb7bebe8212e9be570e6568ae2c16b54be42
+- filename: lib/nice/recruitment/job_offer.rb
+  checksum: 20f1786a4207b314cd713e2b5d98bda02e63d291799a15f5c85f6d4d5e954037
+- filename: spec/nice/recruitment/client_spec.rb
+  checksum: 54892d592185bdfce321d3684c90f63207b48f94655c221e2995487c09b51128
 - filename: spec/nice/client_spec.rb
   checksum: ""
   ignore_detectors: [filecontent]
@@ -14,6 +22,20 @@ fileignoreconfig:
 - filename: spec/cassettes/**/*
   checksum: ""
   ignore_detectors: [filecontent]
+- filename: spec/cassettes/Nice_Recruitment_Client/_job/returns_a_fully_populated_JobOffer.yml
+  checksum: ec15c95a53f15a54e4e133afa3b1ac9ba1359f5222db8831ecff30baca5b6606
+- filename: spec/cassettes/Nice_Recruitment_Client/_job/raises_Nice_APIError_for_an_unknown_id.yml
+  checksum: e9b954b26a5891c94295c7f8ad5547654ee267bbc229eaf95dda633c2e034bd8
+- filename: spec/cassettes/Nice_Recruitment_Client/_jobs/returns_an_array_of_JobOffer_objects_from_the_listing.yml
+  checksum: 475e281374ac762f281c7ad4cd92d1d00a403a9ac5311415bc2460600f73d43e
+- filename: spec/cassettes/Nice_Recruitment_Client/_jobs/returns_a_filtered_subset_for_a_keyword_search.yml
+  checksum: 9bb958134b18d41c0edc517239ab49e7ea91904e7c6e047fde255a6503734194
+- filename: spec/cassettes/Nice_Recruitment_Client/_jobs/filters_by_category_label.yml
+  checksum: c1ecff9c2f1dc9a524347b5b06fb3dbc2624b76cc91a1771d60947c81ff2b9a6
+- filename: spec/cassettes/Nice_Recruitment_Client/_jobs/raises_ArgumentError_for_an_unknown_filter_value.yml
+  checksum: 33dd21225ea24ad00c443de10f2afa35eb881014b3376221a43882c6515b67e9
+- filename: spec/cassettes/Nice_Recruitment_Client/_search_options/returns_the_filter_vocabularies_parsed_from_the_listing_page.yml
+  checksum: 2247a959e229631142d7a326f737bbf2b03af578a3ab8aa67deca2c1ba0592f1
 
 scopeconfig:
 - scope: ruby

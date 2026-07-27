@@ -44,3 +44,35 @@ puts "Found #{orgs.count} organizations"
 #   ckan_url: ENV.fetch('NICE_CKAN_URL'),
 #   api_key:  ENV.fetch('NICE_CKAN_API_KEY', nil)
 # )
+
+# --- Job offers (recrutement.nicecotedazur.org, no credentials needed) ---
+puts "\nListing job offers..."
+recruitment = Nice::Recruitment::Client.new
+offers = recruitment.jobs
+puts "Found #{offers.count} job offers"
+
+if offers.any?
+  offer = recruitment.job(offers.first.id)
+  puts "First offer: #{offer.title} (#{offer.contract}) — deadline: #{offer.deadline || 'n/a'}"
+end
+
+# Discover the available filter vocabularies (domains, functions, contracts,
+# sectors, categories, entities) before building a filtered search.
+puts "\nAvailable job filters..."
+options = recruitment.search_options
+puts "Domains: #{options[:domains].values.take(3).join(', ')}..."
+puts "Contracts: #{options[:contracts].values.join(', ')}"
+
+# Search job offers with filters. Each filter accepts an id or an exact label
+# (case-insensitive); the multi-valued ones (contracts, sectors, categories)
+# also take arrays. See #search_options above for valid values.
+puts "\nSearching job offers with filters..."
+filtered = recruitment.jobs(
+  keywords: 'informatique',
+  contracts: ['Titulaire / Lauréat de concours'],
+  entity: 'Ville de Nice'
+)
+puts "Found #{filtered.count} matching offers"
+filtered.first(5).each do |job|
+  puts "- #{job.title} (#{job.recruitment_nature}) — #{job.category}"
+end

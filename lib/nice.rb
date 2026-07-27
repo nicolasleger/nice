@@ -4,6 +4,7 @@ require_relative 'nice/client'
 require_relative 'nice/version'
 
 require_relative 'nice/data_gouv/client'
+require_relative 'nice/recruitment/client'
 
 module Nice
   class Error < StandardError; end
